@@ -1,0 +1,42 @@
+[
+  {
+    "proprietary": "Adobe Photoshop",
+    "foss_id": "gimp"
+  },
+  {
+    "proprietary": "Adobe Photoshop",
+    "foss_id": "krita"
+  },
+  {
+    "proprietary": "Microsoft Office",
+    "foss_id": "libreoffice"
+  },
+  {
+    "proprietary": "Autodesk Maya",
+    "foss_id": "blender"
+  },
+  {
+    "proprietary": "Windows Media Player",
+    "foss_id": "vlc"
+  },
+  {
+    "proprietary": "Camtasia",
+    "foss_id": "obs"
+  },
+  {
+    "proprietary": "ArcGIS",
+    "foss_id": "qgis"
+  },
+  {
+    "proprietary": "Microsoft Outlook",
+    "foss_id": "thunderbird"
+  },
+  {
+    "proprietary": "Adobe Premiere Pro",
+    "foss_id": "kdenlive"
+  },
+  {
+    "proprietary": "Adobe Illustrator",
+    "foss_id": "inkscape"
+  }
+]

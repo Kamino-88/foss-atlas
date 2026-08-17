@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ubuntu",
+    "name": "Ubuntu",
+    "family": "GNU/Linux",
+    "description": "Popular Linux distribution for desktops, servers, cloud and development.",
+    "purpose": [
+      "Desktop",
+      "Server",
+      "Development"
+    ],
+    "beginner_friendly": true,
+    "license": "Open-source ecosystem",
+    "official_website": "https://ubuntu.com/",
+    "download_url": "https://ubuntu.com/download",
+    "status": "Active"
+  },
+  {
+    "id": "linux-mint",
+    "name": "Linux Mint",
+    "family": "GNU/Linux",
+    "description": "User-friendly Linux distribution focused on ease of use.",
+    "purpose": [
+      "Desktop",
+      "Beginner",
+      "Old Hardware"
+    ],
+    "beginner_friendly": true,
+    "license": "Open-source ecosystem",
+    "official_website": "https://linuxmint.com/",
+    "download_url": "https://linuxmint.com/download.php",
+    "status": "Active"
+  },
+  {
+    "id": "debian",
+    "name": "Debian",
+    "family": "GNU/Linux",
+    "description": "Mature community-driven Linux distribution known for stability.",
+    "purpose": [
+      "Desktop",
+      "Server",
+      "Development"
+    ],
+    "beginner_friendly": true,
+    "license": "Open-source ecosystem",
+    "official_website": "https://www.debian.org/",
+    "download_url": "https://www.debian.org/distrib/",
+    "status": "Active"
+  },
+  {
+    "id": "fedora",
+    "name": "Fedora Linux",
+    "family": "GNU/Linux",
+    "description": "Community Linux distribution focused on current technologies.",
+    "purpose": [
+      "Desktop",
+      "Development",
+      "Server"
+    ],
+    "beginner_friendly": false,
+    "license": "Open-source ecosystem",
+    "official_website": "https://fedoraproject.org/",
+    "download_url": "https://fedoraproject.org/workstation/download/",
+    "status": "Active"
+  },
+  {
+    "id": "freebsd",
+    "name": "FreeBSD",
+    "family": "BSD",
+    "description": "Unix-like open-source operating system with strong networking and server capabilities.",
+    "purpose": [
+      "Server",
+      "Networking",
+      "Desktop"
+    ],
+    "beginner_friendly": false,
+    "license": "BSD",
+    "official_website": "https://www.freebsd.org/",
+    "download_url": "https://www.freebsd.org/where/",
+    "status": "Active"
+  },
+  {
+    "id": "tails",
+    "name": "Tails",
+    "family": "GNU/Linux",
+    "description": "Privacy-focused live operating system.",
+    "purpose": [
+      "Privacy",
+      "Security"
+    ],
+    "beginner_friendly": false,
+    "license": "Free Software",
+    "official_website": "https://tails.net/",
+    "download_url": "https://tails.net/install/",
+    "status": "Active"
+  },
+  {
+    "id": "grapheneos",
+    "name": "GrapheneOS",
+    "family": "Mobile",
+    "description": "Privacy and security focused mobile operating system based on Android Open Source Project.",
+    "purpose": [
+      "Mobile",
+      "Privacy",
+      "Security"
+    ],
+    "beginner_friendly": false,
+    "license": "Open-source ecosystem",
+    "official_website": "https://grapheneos.org/",
+    "download_url": "https://grapheneos.org/install/",
+    "status": "Active"
+  },
+  {
+    "id": "haiku",
+    "name": "Haiku",
+    "family": "Other",
+    "description": "Open-source operating system inspired by BeOS.",
+    "purpose": [
+      "Desktop",
+      "Alternative OS"
+    ],
+    "beginner_friendly": false,
+    "license": "Open source",
+    "official_website": "https://www.haiku-os.org/",
+    "download_url": "https://www.haiku-os.org/get-haiku",
+    "status": "Developing"
+  }
+]

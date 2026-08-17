@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gpl",
+    "name": "GNU GPL",
+    "type": "Free/Open Source"
+  },
+  {
+    "id": "mpl-2.0",
+    "name": "Mozilla Public License 2.0",
+    "type": "Free/Open Source"
+  },
+  {
+    "id": "bsd",
+    "name": "BSD License",
+    "type": "Free/Open Source"
+  }
+]

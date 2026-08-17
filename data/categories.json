@@ -1,0 +1,22 @@
+[
+  {
+    "id": "graphics",
+    "name": "Graphics"
+  },
+  {
+    "id": "internet",
+    "name": "Internet"
+  },
+  {
+    "id": "multimedia",
+    "name": "Multimedia"
+  },
+  {
+    "id": "productivity",
+    "name": "Productivity"
+  },
+  {
+    "id": "science-&-gis",
+    "name": "Science & GIS"
+  }
+]
