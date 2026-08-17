@@ -1,0 +1,16 @@
+{
+  "policy_version": "1.0.0",
+  "purpose": "Define how FOSS Atlas can safely monitor project updates without blindly replacing verified catalog data.",
+  "update_levels": {
+    "automatic_safe": ["Official release version changed", "Official release date added or corrected", "Official download URL changed with confirmed redirect", "Official source URL changed with confirmed project ownership"],
+    "review_required": ["License changed", "Project ownership changed", "Project becomes archived or discontinued", "Official domain changes", "Free-to-use status changes", "Major platform support change", "Project renamed or merged"],
+    "manual_editorial": ["Category or subcategory changes", "Alternative-to relationships", "Beginner-friendly assessment", "Description wording", "Country/origin metadata"]
+  },
+  "verification_requirements": {
+    "minimum_for_production": ["official_website", "official source/download evidence", "license evidence", "last_verified", "verification_status"],
+    "version_update": "Only update the displayed stable version automatically when an authoritative official release source confirms it.",
+    "auditability": "Every automated change should record timestamp, old value, new value and source URL in the future update log."
+  },
+  "recommended_check_interval": "weekly",
+  "human_review_interval": "quarterly"
+}
