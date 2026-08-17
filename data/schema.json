@@ -1,0 +1,91 @@
+{
+  "schema_name": "FOSS Atlas Master Database Schema",
+  "schema_version": "1.0.0",
+  "last_schema_update": "2026-08-17",
+  "purpose": "Canonical field definitions for the global FOSS Atlas catalog. This schema separates factual project metadata from presentation assets and verification metadata.",
+  "entities": {
+    "software": {
+      "required": ["id", "name", "category", "subcategory", "description", "license", "platforms", "official_website", "download_url", "source_code_url", "status"],
+      "fields": {
+        "id": {"type": "string", "description": "Stable FOSS Atlas identifier; never change after publication."},
+        "name": {"type": "string", "description": "Canonical project/product name."},
+        "category": {"type": "string", "description": "Primary directory category."},
+        "subcategory": {"type": "string", "description": "Secondary functional category."},
+        "description": {"type": "string", "description": "Short neutral description written by FOSS Atlas."},
+        "developer": {"type": "string", "description": "Project, foundation, company or community responsible for development."},
+        "license": {"type": "string", "description": "Human-readable license name(s)."},
+        "license_spdx": {"type": "array", "items": "string", "description": "SPDX identifiers where applicable."},
+        "open_source": {"type": "boolean", "description": "Whether the source is publicly available under an open-source license."},
+        "free_to_use": {"type": "boolean", "description": "Whether the listed edition is available at no monetary cost for its stated use."},
+        "pricing_model": {"type": "string", "enum": ["Free", "Free and Paid", "Freemium", "Donation-supported", "Other"], "description": "Practical user-facing pricing classification."},
+        "platforms": {"type": "array", "items": "string", "description": "Supported operating-system/platform families."},
+        "architectures": {"type": "array", "items": "string", "description": "Supported CPU/device architectures when known."},
+        "version": {"type": "string", "description": "Latest verified stable version at last verification."},
+        "version_scheme": {"type": "string", "description": "Project versioning convention, e.g. semantic, calendar, major-only."},
+        "release_date": {"type": "string", "format": "YYYY-MM-DD", "description": "Release date of the recorded version when verified."},
+        "official_website": {"type": "string", "format": "uri", "description": "Official project website."},
+        "download_url": {"type": "string", "format": "uri", "description": "Official download/install page."},
+        "source_code_url": {"type": "string", "format": "uri", "description": "Official source-code repository or project source page."},
+        "documentation_url": {"type": "string", "format": "uri", "description": "Official documentation/manual."},
+        "issue_tracker_url": {"type": "string", "format": "uri", "description": "Official issue tracker when available."},
+        "alternative_to": {"type": "array", "items": "string", "description": "Proprietary or other products for which this project is a practical alternative."},
+        "status": {"type": "string", "enum": ["Active", "Maintenance", "Developing", "Archived", "Discontinued", "Unknown"], "description": "Current project lifecycle status."},
+        "logo_id": {"type": "string", "description": "Stable key used by logos.json."},
+        "last_verified": {"type": "string", "format": "YYYY-MM-DD", "description": "Date FOSS Atlas last verified the record against authoritative sources."},
+        "verification_status": {"type": "string", "enum": ["Verified", "Partially Verified", "Needs Review", "Archived"], "description": "Editorial verification state."},
+        "verification_sources": {"type": "array", "items": "string", "description": "IDs of authoritative sources used for verification."},
+        "notes": {"type": "string", "description": "Editorial notes; never substitute for source evidence."}
+      }
+    },
+    "operating_system": {
+      "required": ["id", "name", "family", "description", "purpose", "license", "official_website", "download_url", "status"],
+      "fields": {
+        "id": {"type": "string", "description": "Stable FOSS Atlas identifier."},
+        "name": {"type": "string", "description": "Canonical operating-system/distribution name."},
+        "family": {"type": "string", "description": "OS family such as GNU/Linux, BSD, Mobile or Other."},
+        "description": {"type": "string", "description": "Short neutral description."},
+        "purpose": {"type": "array", "items": "string", "description": "Primary use cases."},
+        "developer": {"type": "string", "description": "Organization/community/project responsible for the OS."},
+        "license": {"type": "string", "description": "Primary or representative license information."},
+        "license_spdx": {"type": "array", "items": "string", "description": "SPDX identifiers where applicable."},
+        "open_source": {"type": "boolean", "description": "Whether the OS is open source as a whole or as the stated distribution/project."},
+        "free_to_use": {"type": "boolean", "description": "Whether the OS is available at no monetary cost."},
+        "pricing_model": {"type": "string", "enum": ["Free", "Free and Paid", "Donation-supported", "Other"], "description": "User-facing availability classification."},
+        "architectures": {"type": "array", "items": "string", "description": "Supported CPU/device architectures."},
+        "version": {"type": "string", "description": "Latest verified stable release."},
+        "release_date": {"type": "string", "format": "YYYY-MM-DD", "description": "Release date of recorded version."},
+        "beginner_friendly": {"type": "boolean", "description": "Editorial assessment for general users."},
+        "official_website": {"type": "string", "format": "uri", "description": "Official OS project website."},
+        "download_url": {"type": "string", "format": "uri", "description": "Official download/install page."},
+        "source_code_url": {"type": "string", "format": "uri", "description": "Official source repository or source page."},
+        "documentation_url": {"type": "string", "format": "uri", "description": "Official documentation."},
+        "status": {"type": "string", "enum": ["Active", "Maintenance", "Developing", "Archived", "Discontinued", "Unknown"], "description": "Current project lifecycle status."},
+        "logo_id": {"type": "string", "description": "Stable key used by logos.json."},
+        "last_verified": {"type": "string", "format": "YYYY-MM-DD", "description": "Date FOSS Atlas last verified the record."},
+        "verification_status": {"type": "string", "enum": ["Verified", "Partially Verified", "Needs Review", "Archived"], "description": "Editorial verification state."},
+        "verification_sources": {"type": "array", "items": "string", "description": "IDs of authoritative sources used for verification."},
+        "notes": {"type": "string", "description": "Editorial notes."}
+      }
+    },
+    "logo": {
+      "required": ["entity_type", "entity_id", "logo_url", "source_type"],
+      "fields": {
+        "entity_type": {"type": "string", "enum": ["software", "operating_system"]},
+        "entity_id": {"type": "string", "description": "Matches the stable entity ID."},
+        "logo_url": {"type": "string", "format": "uri", "description": "Logo asset URL."},
+        "source_type": {"type": "string", "enum": ["Official", "Verified third-party", "Fallback"], "description": "Provenance of the logo asset."},
+        "license_note": {"type": "string", "description": "Logo trademark/licensing note when required."},
+        "last_verified": {"type": "string", "format": "YYYY-MM-DD", "description": "Date logo reference was checked."}
+      }
+    }
+  },
+  "editorial_rules": [
+    "Never treat a project as FOSS solely because it is free of charge.",
+    "Verify open-source status from the project's license/source information.",
+    "Prefer official project domains for website, download, documentation and source links.",
+    "Keep stable IDs permanent; use a separate alias field if a project changes name.",
+    "Record last_verified for every production record.",
+    "Do not overwrite verified data with an automated update unless the source is authoritative and the change is auditable.",
+    "Use Needs Review when an automated check detects a material change that cannot be safely confirmed."
+  ]
+}
