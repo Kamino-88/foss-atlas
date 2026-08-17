@@ -1,0 +1,24 @@
+{
+  "software": {
+    "gimp": "https://cdn.simpleicons.org/gimp",
+    "krita": "https://cdn.simpleicons.org/krita",
+    "libreoffice": "https://cdn.simpleicons.org/libreoffice",
+    "blender": "https://cdn.simpleicons.org/blender",
+    "vlc": "https://cdn.simpleicons.org/vlcmediaplayer",
+    "obs": "https://cdn.simpleicons.org/obsstudio",
+    "qgis": "https://cdn.simpleicons.org/qgis",
+    "thunderbird": "https://cdn.simpleicons.org/thunderbird",
+    "kdenlive": "https://cdn.simpleicons.org/kdenlive",
+    "inkscape": "https://cdn.simpleicons.org/inkscape"
+  },
+  "operating_systems": {
+    "ubuntu": "https://cdn.simpleicons.org/ubuntu",
+    "linux-mint": "https://cdn.simpleicons.org/linuxmint",
+    "debian": "https://cdn.simpleicons.org/debian",
+    "fedora": "https://cdn.simpleicons.org/fedora",
+    "freebsd": "https://cdn.simpleicons.org/freebsd",
+    "tails": "https://cdn.simpleicons.org/tails",
+    "grapheneos": "https://cdn.simpleicons.org/grapheneos",
+    "haiku": "https://cdn.simpleicons.org/haiku"
+  }
+}
