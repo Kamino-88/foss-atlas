@@ -1,24 +1,7 @@
 {
   "software": {
-    "gimp": "https://cdn.simpleicons.org/gimp",
-    "krita": "https://cdn.simpleicons.org/krita",
-    "libreoffice": "https://cdn.simpleicons.org/libreoffice",
-    "blender": "https://cdn.simpleicons.org/blender",
-    "vlc": "https://cdn.simpleicons.org/vlcmediaplayer",
-    "obs": "https://cdn.simpleicons.org/obsstudio",
-    "qgis": "https://cdn.simpleicons.org/qgis",
-    "thunderbird": "https://cdn.simpleicons.org/thunderbird",
-    "kdenlive": "https://cdn.simpleicons.org/kdenlive",
-    "inkscape": "https://cdn.simpleicons.org/inkscape"
-  },
+    "gimp":"https://cdn.simpleicons.org/gimp","krita":"https://cdn.simpleicons.org/krita","libreoffice":"https://cdn.simpleicons.org/libreoffice","blender":"https://cdn.simpleicons.org/blender","vlc":"https://cdn.simpleicons.org/vlcmediaplayer","obs":"https://cdn.simpleicons.org/obsstudio","qgis":"https://cdn.simpleicons.org/qgis","thunderbird":"https://cdn.simpleicons.org/thunderbird","kdenlive":"https://cdn.simpleicons.org/kdenlive","inkscape":"https://cdn.simpleicons.org/inkscape","scribus":"https://cdn.simpleicons.org/scribus","darktable":"https://cdn.simpleicons.org/darktable","rawtherapee":"https://cdn.simpleicons.org/rawtherapee","mypaint":"https://cdn.simpleicons.org/mypaint","pencil2d":"https://cdn.simpleicons.org/pencil2d","synfig":"https://cdn.simpleicons.org/synfig","opentoonz":"https://cdn.simpleicons.org/opentoonz","natron":"https://cdn.simpleicons.org/natron","shotcut":"https://cdn.simpleicons.org/shotcut","audacity":"https://cdn.simpleicons.org/audacity","handbrake":"https://cdn.simpleicons.org/handbrake","onlyoffice":"https://cdn.simpleicons.org/onlyoffice","calligra":"https://cdn.simpleicons.org/calligra","openoffice":"https://cdn.simpleicons.org/apacheopenoffice","calibre":"https://cdn.simpleicons.org/calibre","keepassxc":"https://cdn.simpleicons.org/keepassxc","filezilla":"https://cdn.simpleicons.org/filezilla","sevenzip":"https://cdn.simpleicons.org/7zip"},
   "operating_systems": {
-    "ubuntu": "https://cdn.simpleicons.org/ubuntu",
-    "linux-mint": "https://cdn.simpleicons.org/linuxmint",
-    "debian": "https://cdn.simpleicons.org/debian",
-    "fedora": "https://cdn.simpleicons.org/fedora",
-    "freebsd": "https://cdn.simpleicons.org/freebsd",
-    "tails": "https://cdn.simpleicons.org/tails",
-    "grapheneos": "https://cdn.simpleicons.org/grapheneos",
-    "haiku": "https://cdn.simpleicons.org/haiku"
+    "ubuntu":"https://cdn.simpleicons.org/ubuntu","linux-mint":"https://cdn.simpleicons.org/linuxmint","debian":"https://cdn.simpleicons.org/debian","fedora":"https://cdn.simpleicons.org/fedora","freebsd":"https://cdn.simpleicons.org/freebsd","tails":"https://cdn.simpleicons.org/tails","grapheneos":"https://cdn.simpleicons.org/grapheneos","haiku":"https://cdn.simpleicons.org/haiku"
   }
 }
