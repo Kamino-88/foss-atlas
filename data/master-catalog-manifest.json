@@ -1,0 +1,44 @@
+{
+  "catalog_name": "FOSS Atlas Master Catalog",
+  "schema_version": "1.0",
+  "catalog_version": "0.2",
+  "last_updated": "2026-09-19",
+  "purpose": "Single source-of-truth manifest for the browser catalog while source datasets remain modular for GitHub Pages and Google Sites embedding.",
+  "software_sources": [
+    "software.json",
+    "software-expansion-100.json",
+    "software-phase2-a.json",
+    "software-phase2-b.json"
+  ],
+  "operating_system_sources": [
+    "operating-systems-v1.json",
+    "operating-systems-expansion-25.json",
+    "operating-systems-phase2-25.json",
+    "operating-systems-phase2-b.json"
+  ],
+  "reference_sources": [
+    "categories.json",
+    "alternatives.json",
+    "licenses.json",
+    "logos.json",
+    "schema.json"
+  ],
+  "rules": {
+    "software_requires_open_source": true,
+    "software_requires_free_to_use": true,
+    "os_requires_open_source": true,
+    "deduplicate_by": ["id", "normalized_name", "official_website_host"],
+    "prefer_record_order": "first_verified_record wins",
+    "verification_status_values": ["Verified", "Partially Verified", "Needs Review", "Archived"],
+    "logo_policy": "Use logos.json first, then official-site favicon, then generated initials fallback",
+    "official_link_policy": "Prefer the project's official website; download and source links are separate fields"
+  },
+  "phase_2_targets": {
+    "software_unique_projects": 250,
+    "operating_system_unique_projects": 50
+  },
+  "phase_3_targets": {
+    "software_unique_projects": 400,
+    "operating_system_unique_projects": 50
+  }
+}
