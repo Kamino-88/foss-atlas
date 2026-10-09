@@ -10,8 +10,8 @@ Scope: all eight JSON datasets currently loaded by `app.js`. This is a structura
 | Measure | Software | Operating systems |
 |---|---:|---:|
 | Raw records across loaded source files | 160 | 72 |
-| Distinct IDs before name-level deduplication | 149 | 59 |
-| Distinct normalized names before eligibility filtering | 149 | 59 |
+| Distinct IDs before name-level deduplication | 159 | 72 |
+| Distinct normalized names before eligibility filtering | 150 | 59 |
 | Unique eligible records using the current catalog engine's rules | **148** | **59** |
 | Phase 2 target | 250 | 50 |
 | Current target gap / surplus | **102 short** | **9 above target** |
