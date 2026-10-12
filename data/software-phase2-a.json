@@ -17,11 +17,12 @@
     "download_url": "https://www.pinta-project.com/releases/",
     "source_code_url": "https://github.com/PintaProject/Pinta",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.pinta-project.com/",
       "https://github.com/PintaProject/Pinta"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "librecad",
@@ -29,7 +30,7 @@
     "category": "3D / CAD",
     "subcategory": "2D CAD",
     "description": "Open-source 2D CAD application for technical drawings.",
-    "license": "GPL-2.0-or-later",
+    "license": "GPL-2.0-only",
     "open_source": true,
     "free_to_use": true,
     "platforms": [
@@ -41,11 +42,13 @@
     "download_url": "https://librecad.org/",
     "source_code_url": "https://github.com/LibreCAD/LibreCAD",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://librecad.org/",
       "https://github.com/LibreCAD/LibreCAD"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Official repository README identifies GPL version 2 (GPLv2); SPDX normalized to GPL-2.0-only."
   },
   {
     "id": "solvespace",
@@ -53,7 +56,7 @@
     "category": "3D / CAD",
     "subcategory": "Parametric CAD",
     "description": "Open-source parametric 2D and 3D CAD program.",
-    "license": "GPL-3.0-or-later",
+    "license": "GPL-3.0-only",
     "open_source": true,
     "free_to_use": true,
     "platforms": [
@@ -65,11 +68,13 @@
     "download_url": "https://solvespace.com/download.pl",
     "source_code_url": "https://github.com/solvespace/solvespace",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://solvespace.com/",
       "https://github.com/solvespace/solvespace"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Official project site identifies the application as GPLv3; SPDX normalized to GPL-3.0-only."
   },
   {
     "id": "meshlab",
@@ -89,11 +94,12 @@
     "download_url": "https://www.meshlab.net/#download",
     "source_code_url": "https://github.com/cnr-isti-vclab/meshlab",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.meshlab.net/",
       "https://github.com/cnr-isti-vclab/meshlab"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "openshot",
@@ -113,11 +119,12 @@
     "download_url": "https://www.openshot.org/download/",
     "source_code_url": "https://github.com/OpenShot/openshot-qt",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.openshot.org/",
       "https://github.com/OpenShot/openshot-qt"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "flowblade",
@@ -135,11 +142,12 @@
     "download_url": "https://jliljebl.github.io/flowblade/",
     "source_code_url": "https://github.com/jliljebl/flowblade",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://jliljebl.github.io/flowblade/",
       "https://github.com/jliljebl/flowblade"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "mixxx",
@@ -159,11 +167,12 @@
     "download_url": "https://mixxx.org/download/",
     "source_code_url": "https://github.com/mixxxdj/mixxx",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://mixxx.org/",
       "https://github.com/mixxxdj/mixxx"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "mpv-phase2",
@@ -183,11 +192,12 @@
     "download_url": "https://mpv.io/installation/",
     "source_code_url": "https://github.com/mpv-player/mpv",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://mpv.io/",
       "https://github.com/mpv-player/mpv"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "anki",
@@ -195,7 +205,7 @@
     "category": "Education",
     "subcategory": "Flashcards",
     "description": "Open-source spaced-repetition flashcard application.",
-    "license": "AGPL-3.0",
+    "license": "AGPL-3.0-or-later",
     "open_source": true,
     "free_to_use": true,
     "platforms": [
@@ -209,11 +219,13 @@
     "download_url": "https://apps.ankiweb.net/",
     "source_code_url": "https://github.com/ankitects/anki",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://apps.ankiweb.net/",
       "https://github.com/ankitects/anki"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Project source license states GNU AGPL version 3 or later; some bundled components have separate licenses."
   },
   {
     "id": "moodle",
@@ -233,11 +245,12 @@
     "download_url": "https://download.moodle.org/",
     "source_code_url": "https://github.com/moodle/moodle",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://moodle.org/",
       "https://github.com/moodle/moodle"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "kiwix",
@@ -259,10 +272,11 @@
     "download_url": "https://kiwix.org/en/downloads/",
     "source_code_url": "https://github.com/kiwix/kiwix-desktop",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://kiwix.org/",
       "https://github.com/kiwix/kiwix-desktop"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   }
 ]
