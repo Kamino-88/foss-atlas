@@ -1,15 +1,213 @@
 [
-  {"id":"pinta","name":"Pinta","category":"Graphics","subcategory":"Image Editing","description":"Simple open-source drawing and image editor.","license":"MIT","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://www.pinta-project.com/","download_url":"https://www.pinta-project.com/releases/","source_code_url":"https://github.com/PintaProject/Pinta","status":"Active"},
-  {"id":"librecad","name":"LibreCAD","category":"3D / CAD","subcategory":"2D CAD","description":"Open-source 2D CAD application for technical drawings.","license":"GPL-2.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://librecad.org/","download_url":"https://librecad.org/","source_code_url":"https://github.com/LibreCAD/LibreCAD","status":"Active"},
-  {"id":"solvespace","name":"SolveSpace","category":"3D / CAD","subcategory":"Parametric CAD","description":"Open-source parametric 2D and 3D CAD program.","license":"GPL-3.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://solvespace.com/","download_url":"https://solvespace.com/download.pl","source_code_url":"https://github.com/solvespace/solvespace","status":"Active"},
-  {"id":"meshlab","name":"MeshLab","category":"3D / CAD","subcategory":"3D Mesh Processing","description":"Open-source tool for processing and editing triangular meshes.","license":"GPL-3.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://www.meshlab.net/","download_url":"https://www.meshlab.net/#download","source_code_url":"https://github.com/cnr-isti-vclab/meshlab","status":"Active"},
-  {"id":"obs-studio","name":"OBS Studio","category":"Multimedia","subcategory":"Streaming / Recording","description":"Open-source video recording and live streaming software.","license":"GPL-2.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://obsproject.com/","download_url":"https://obsproject.com/download","source_code_url":"https://github.com/obsproject/obs-studio","status":"Active"},
-  {"id":"openshot","name":"OpenShot","category":"Multimedia","subcategory":"Video Editing","description":"Easy-to-use open-source video editor.","license":"GPL-3.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://www.openshot.org/","download_url":"https://www.openshot.org/download/","source_code_url":"https://github.com/OpenShot/openshot-qt","status":"Active"},
-  {"id":"flowblade","name":"Flowblade","category":"Multimedia","subcategory":"Video Editing","description":"Open-source multitrack video editor for Linux.","license":"GPL-3.0-or-later","open_source":true,"free_to_use":true,"platforms":["Linux"],"official_website":"https://jliljebl.github.io/flowblade/","download_url":"https://jliljebl.github.io/flowblade/","source_code_url":"https://github.com/jliljebl/flowblade","status":"Active"},
-  {"id":"mixxx","name":"Mixxx","category":"Multimedia","subcategory":"DJ / Audio","description":"Free open-source DJ software for live mixing.","license":"GPL-2.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://mixxx.org/","download_url":"https://mixxx.org/download/","source_code_url":"https://github.com/mixxxdj/mixxx","status":"Active"},
-  {"id":"vlc-phase2","name":"VLC media player","category":"Multimedia","subcategory":"Media Player","description":"Open-source multimedia player supporting many formats.","license":"GPL-2.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux","Android","iOS"],"official_website":"https://www.videolan.org/vlc/","download_url":"https://www.videolan.org/vlc/","source_code_url":"https://code.videolan.org/videolan/vlc","status":"Active"},
-  {"id":"mpv-phase2","name":"mpv","category":"Multimedia","subcategory":"Media Player","description":"Free open-source command-line and graphical media player.","license":"GPL-2.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux"],"official_website":"https://mpv.io/","download_url":"https://mpv.io/installation/","source_code_url":"https://github.com/mpv-player/mpv","status":"Active"},
-  {"id":"anki","name":"Anki","category":"Education","subcategory":"Flashcards","description":"Open-source spaced-repetition flashcard application.","license":"AGPL-3.0","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux","Android","iOS"],"official_website":"https://apps.ankiweb.net/","download_url":"https://apps.ankiweb.net/","source_code_url":"https://github.com/ankitects/anki","status":"Active"},
-  {"id":"moodle","name":"Moodle","category":"Education","subcategory":"Learning Management","description":"Open-source learning management system.","license":"GPL-3.0-or-later","open_source":true,"free_to_use":true,"platforms":["Web","Linux","Windows"],"official_website":"https://moodle.org/","download_url":"https://download.moodle.org/","source_code_url":"https://github.com/moodle/moodle","status":"Active"},
-  {"id":"kiwix","name":"Kiwix","category":"Education","subcategory":"Offline Knowledge","description":"Open-source offline reader for Wikipedia and educational content.","license":"GPL-3.0-or-later","open_source":true,"free_to_use":true,"platforms":["Windows","macOS","Linux","Android","iOS"],"official_website":"https://kiwix.org/","download_url":"https://kiwix.org/en/downloads/","source_code_url":"https://github.com/kiwix/kiwix-desktop","status":"Active"}
+  {
+    "id": "pinta",
+    "name": "Pinta",
+    "category": "Graphics",
+    "subcategory": "Image Editing",
+    "description": "Simple open-source drawing and image editor.",
+    "license": "MIT",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://www.pinta-project.com/",
+    "download_url": "https://www.pinta-project.com/releases/",
+    "source_code_url": "https://github.com/PintaProject/Pinta",
+    "status": "Active"
+  },
+  {
+    "id": "librecad",
+    "name": "LibreCAD",
+    "category": "3D / CAD",
+    "subcategory": "2D CAD",
+    "description": "Open-source 2D CAD application for technical drawings.",
+    "license": "GPL-2.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://librecad.org/",
+    "download_url": "https://librecad.org/",
+    "source_code_url": "https://github.com/LibreCAD/LibreCAD",
+    "status": "Active"
+  },
+  {
+    "id": "solvespace",
+    "name": "SolveSpace",
+    "category": "3D / CAD",
+    "subcategory": "Parametric CAD",
+    "description": "Open-source parametric 2D and 3D CAD program.",
+    "license": "GPL-3.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://solvespace.com/",
+    "download_url": "https://solvespace.com/download.pl",
+    "source_code_url": "https://github.com/solvespace/solvespace",
+    "status": "Active"
+  },
+  {
+    "id": "meshlab",
+    "name": "MeshLab",
+    "category": "3D / CAD",
+    "subcategory": "3D Mesh Processing",
+    "description": "Open-source tool for processing and editing triangular meshes.",
+    "license": "GPL-3.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://www.meshlab.net/",
+    "download_url": "https://www.meshlab.net/#download",
+    "source_code_url": "https://github.com/cnr-isti-vclab/meshlab",
+    "status": "Active"
+  },
+  {
+    "id": "openshot",
+    "name": "OpenShot",
+    "category": "Multimedia",
+    "subcategory": "Video Editing",
+    "description": "Easy-to-use open-source video editor.",
+    "license": "GPL-3.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://www.openshot.org/",
+    "download_url": "https://www.openshot.org/download/",
+    "source_code_url": "https://github.com/OpenShot/openshot-qt",
+    "status": "Active"
+  },
+  {
+    "id": "flowblade",
+    "name": "Flowblade",
+    "category": "Multimedia",
+    "subcategory": "Video Editing",
+    "description": "Open-source multitrack video editor for Linux.",
+    "license": "GPL-3.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Linux"
+    ],
+    "official_website": "https://jliljebl.github.io/flowblade/",
+    "download_url": "https://jliljebl.github.io/flowblade/",
+    "source_code_url": "https://github.com/jliljebl/flowblade",
+    "status": "Active"
+  },
+  {
+    "id": "mixxx",
+    "name": "Mixxx",
+    "category": "Multimedia",
+    "subcategory": "DJ / Audio",
+    "description": "Free open-source DJ software for live mixing.",
+    "license": "GPL-2.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://mixxx.org/",
+    "download_url": "https://mixxx.org/download/",
+    "source_code_url": "https://github.com/mixxxdj/mixxx",
+    "status": "Active"
+  },
+  {
+    "id": "mpv-phase2",
+    "name": "mpv",
+    "category": "Multimedia",
+    "subcategory": "Media Player",
+    "description": "Free open-source command-line and graphical media player.",
+    "license": "GPL-2.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "official_website": "https://mpv.io/",
+    "download_url": "https://mpv.io/installation/",
+    "source_code_url": "https://github.com/mpv-player/mpv",
+    "status": "Active"
+  },
+  {
+    "id": "anki",
+    "name": "Anki",
+    "category": "Education",
+    "subcategory": "Flashcards",
+    "description": "Open-source spaced-repetition flashcard application.",
+    "license": "AGPL-3.0",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "official_website": "https://apps.ankiweb.net/",
+    "download_url": "https://apps.ankiweb.net/",
+    "source_code_url": "https://github.com/ankitects/anki",
+    "status": "Active"
+  },
+  {
+    "id": "moodle",
+    "name": "Moodle",
+    "category": "Education",
+    "subcategory": "Learning Management",
+    "description": "Open-source learning management system.",
+    "license": "GPL-3.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Web",
+      "Linux",
+      "Windows"
+    ],
+    "official_website": "https://moodle.org/",
+    "download_url": "https://download.moodle.org/",
+    "source_code_url": "https://github.com/moodle/moodle",
+    "status": "Active"
+  },
+  {
+    "id": "kiwix",
+    "name": "Kiwix",
+    "category": "Education",
+    "subcategory": "Offline Knowledge",
+    "description": "Open-source offline reader for Wikipedia and educational content.",
+    "license": "GPL-3.0-or-later",
+    "open_source": true,
+    "free_to_use": true,
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "official_website": "https://kiwix.org/",
+    "download_url": "https://kiwix.org/en/downloads/",
+    "source_code_url": "https://github.com/kiwix/kiwix-desktop",
+    "status": "Active"
+  }
 ]
