@@ -16,7 +16,12 @@
     "official_website": "https://www.pinta-project.com/",
     "download_url": "https://www.pinta-project.com/releases/",
     "source_code_url": "https://github.com/PintaProject/Pinta",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://www.pinta-project.com/",
+      "https://github.com/PintaProject/Pinta"
+    ]
   },
   {
     "id": "librecad",
@@ -35,7 +40,12 @@
     "official_website": "https://librecad.org/",
     "download_url": "https://librecad.org/",
     "source_code_url": "https://github.com/LibreCAD/LibreCAD",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://librecad.org/",
+      "https://github.com/LibreCAD/LibreCAD"
+    ]
   },
   {
     "id": "solvespace",
@@ -54,7 +64,12 @@
     "official_website": "https://solvespace.com/",
     "download_url": "https://solvespace.com/download.pl",
     "source_code_url": "https://github.com/solvespace/solvespace",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://solvespace.com/",
+      "https://github.com/solvespace/solvespace"
+    ]
   },
   {
     "id": "meshlab",
@@ -73,7 +88,12 @@
     "official_website": "https://www.meshlab.net/",
     "download_url": "https://www.meshlab.net/#download",
     "source_code_url": "https://github.com/cnr-isti-vclab/meshlab",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://www.meshlab.net/",
+      "https://github.com/cnr-isti-vclab/meshlab"
+    ]
   },
   {
     "id": "openshot",
@@ -92,7 +112,12 @@
     "official_website": "https://www.openshot.org/",
     "download_url": "https://www.openshot.org/download/",
     "source_code_url": "https://github.com/OpenShot/openshot-qt",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://www.openshot.org/",
+      "https://github.com/OpenShot/openshot-qt"
+    ]
   },
   {
     "id": "flowblade",
@@ -109,7 +134,12 @@
     "official_website": "https://jliljebl.github.io/flowblade/",
     "download_url": "https://jliljebl.github.io/flowblade/",
     "source_code_url": "https://github.com/jliljebl/flowblade",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://jliljebl.github.io/flowblade/",
+      "https://github.com/jliljebl/flowblade"
+    ]
   },
   {
     "id": "mixxx",
@@ -128,7 +158,12 @@
     "official_website": "https://mixxx.org/",
     "download_url": "https://mixxx.org/download/",
     "source_code_url": "https://github.com/mixxxdj/mixxx",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://mixxx.org/",
+      "https://github.com/mixxxdj/mixxx"
+    ]
   },
   {
     "id": "mpv-phase2",
@@ -147,7 +182,12 @@
     "official_website": "https://mpv.io/",
     "download_url": "https://mpv.io/installation/",
     "source_code_url": "https://github.com/mpv-player/mpv",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://mpv.io/",
+      "https://github.com/mpv-player/mpv"
+    ]
   },
   {
     "id": "anki",
@@ -168,7 +208,12 @@
     "official_website": "https://apps.ankiweb.net/",
     "download_url": "https://apps.ankiweb.net/",
     "source_code_url": "https://github.com/ankitects/anki",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://apps.ankiweb.net/",
+      "https://github.com/ankitects/anki"
+    ]
   },
   {
     "id": "moodle",
@@ -187,7 +232,12 @@
     "official_website": "https://moodle.org/",
     "download_url": "https://download.moodle.org/",
     "source_code_url": "https://github.com/moodle/moodle",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://moodle.org/",
+      "https://github.com/moodle/moodle"
+    ]
   },
   {
     "id": "kiwix",
@@ -208,6 +258,11 @@
     "official_website": "https://kiwix.org/",
     "download_url": "https://kiwix.org/en/downloads/",
     "source_code_url": "https://github.com/kiwix/kiwix-desktop",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://kiwix.org/",
+      "https://github.com/kiwix/kiwix-desktop"
+    ]
   }
 ]
