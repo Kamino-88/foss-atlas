@@ -52,8 +52,8 @@ The remaining same-name duplicate candidates have now been consolidated after ma
 ## Remaining data-quality work
 
 - One software record, Linearity Curve (`vectornator`), is explicitly marked `open_source: false` and has no `source_code_url`; it is excluded from the eligible FOSS software count.
-- The 27 software records that needed metadata now have `verification_status` and `verification_sources`; 21 are marked `Needs Review` and 6 `Partially Verified`. All 27 still need a real `last_verified` date after checking the sources.
-- The 25 OS records that needed metadata now have a license note, `verification_status: Partially Verified`, and `verification_sources`. All 25 still need a real `last_verified` date and a check of the distribution's component-specific licensing.
+- The 27 software records that needed metadata now have `verification_status: Needs Review` and `verification_sources`. All 27 still need a real `last_verified` date after checking the sources.
+- The 25 OS records that needed metadata now have a license note, `verification_status: Needs Review`, and `verification_sources`. All 25 still need a real `last_verified` date and a check of the distribution's component-specific licensing.
 - Most OS license notes say “Mixed open-source licenses; package-specific” because a distribution typically contains components under different licenses. These are cautious catalog notes, not claims that a single license covers the whole distribution.
 - Official URLs are recorded as verification references, but not all have been independently tested in this pass. Do not invent verification dates.
 
