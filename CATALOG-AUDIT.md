@@ -1,22 +1,21 @@
 # FOSS Atlas — Phase 2 Catalog Audit
 
-Audit date: 2026-10-09  
-Cleanup update: 2026-10-09  
+Audit date: 2026-10-12  
 Catalog version in manifest: 0.2  
-Scope: all eight JSON datasets currently loaded by `app.js`. This is a structural/count audit of the repository data; it is not a live verification that every external URL works.
+Scope: all eight JSON datasets currently loaded by `app.js`. This is a structural/count audit of repository data; it is not a live verification that every external URL resolves.
 
 ## Executive result
 
 | Measure | Software | Operating systems |
 |---|---:|---:|
-| Raw records across loaded source files | 160 | 72 |
-| Distinct IDs before name-level deduplication | 159 | 72 |
-| Distinct normalized names before eligibility filtering | 150 | 59 |
-| Unique eligible records using the current catalog engine's rules | **148** | **59** |
+| Raw records across loaded source files | 149 | 59 |
+| Distinct IDs | 149 | 59 |
+| Distinct normalized names | 149 | 59 |
+| Unique eligible records using current catalog-engine rules | **148** | **59** |
 | Phase 2 target | 250 | 50 |
 | Current target gap / surplus | **102 short** | **9 above target** |
 
-The software target is not yet met. The OS count is above 50 by normalized name, but the final editorial pass must still check that each item is a meaningfully independent OS project rather than a flavor or edition.
+The website was previously confirmed by the project owner to display 148 software projects and 59 operating systems. This matches the eligible counts calculated from the current data. The software target is not yet met. The OS count exceeds 50, but the editorial review should still ensure that entries are meaningfully independent projects rather than editions or flavors.
 
 ## Source datasets and row counts
 
@@ -25,12 +24,12 @@ The software target is not yet met. The OS count is above 50 by normalized name,
 | File | Rows | Notes |
 |---|---:|---|
 | `data/software.json` | 28 | Base dataset |
-| `data/software-expansion-100.json` | 94 | Includes one record explicitly marked `open_source: false` |
-| `data/software-phase2-a.json` | 13 | Remaining records lack `verification_status` and `last_verified` |
-| `data/software-phase2-b.json` | 25 | Remaining records lack `verification_status` and `last_verified` |
-| **Total** | **160** | **148 unique eligible records after the current engine's strict eligibility and deduplication rules** |
+| `data/software-expansion-100.json` | 93 | Includes one record explicitly marked `open_source: false` |
+| `data/software-phase2-a.json` | 11 | Remaining metadata review is needed |
+| `data/software-phase2-b.json` | 17 | Remaining metadata review is needed |
+| **Total** | **149** | **148 eligible open-source and free-to-use projects** |
 
-Software eligibility in the current engine requires both `open_source: true` and `free_to_use: true`. There are 159 records marked open source, all 160 records have `free_to_use: true`, and one record (Linearity Curve / `vectornator`) is explicitly not open source and is excluded. The remaining reduction is mainly duplicate projects and same-name/different-ID candidates.
+The current engine requires both `open_source: true` and `free_to_use: true`. One record, Linearity Curve (`vectornator`), is explicitly marked not open source and is excluded. That record also lacks a `source_code_url`.
 
 ### Operating systems
 
@@ -38,38 +37,43 @@ Software eligibility in the current engine requires both `open_source: true` and
 |---|---:|---|
 | `data/operating-systems-v1.json` | 8 | Base dataset |
 | `data/operating-systems-expansion-25.json` | 26 | Expansion dataset |
-| `data/operating-systems-phase2-25.json` | 18 | Remaining records lack `license` and `last_verified` |
-| `data/operating-systems-phase2-b.json` | 20 | Remaining records lack `license` and `last_verified` |
-| **Total** | **85** | **59 unique names after deduplication** |
+| `data/operating-systems-phase2-25.json` | 9 | Metadata review is needed |
+| `data/operating-systems-phase2-b.json` | 16 | Metadata review is needed |
+| **Total** | **59** | **59 unique OS names** |
 
-All 72 remaining OS records currently have `open_source: true`. The 38 records in the two later OS datasets need license and verification-date metadata added after checking official sources.
+All 59 current OS records have `open_source: true` and `free_to_use: true`. Twenty-five OS records still need a license field and last-verified date.
 
-## Duplicate and consistency findings
+## Duplicate cleanup results
 
-- **Software:** Removed 41 exact duplicate records (matching ID, normalized name, and official website URL), merging any missing fields into the earlier canonical record. Remaining same-name/different-ID candidates are listed in `CATALOG-DUPLICATE-REVIEW.md`.
-- **Operating systems:** Removed 13 exact duplicate records (matching ID, normalized name, and official website URL), merging any missing fields into the earlier canonical record. Remaining same-name/different-ID candidates are listed in `CATALOG-DUPLICATE-REVIEW.md`.
-- Some duplicates use different IDs for the same name (for example, `gimp` / `gimp-phase2`, and `archlinux` / `arch-linux`). These were deliberately left untouched for editorial review.
-- No repeated official-site hostnames were detected by the structural URL-host check in this audit. This does not prove that all URLs resolve or are official.
-- One software record is missing `source_code_url`. No software or OS records were missing ID, name, description, official website, or download URL in the audited files.
-- The current source sets have **38 software records** without `verification_status` and `last_verified`, and **38 OS records** without `license` and `last_verified`.
+- Earlier exact-match cleanup removed 41 software records and 13 OS records.
+- Phase 2C review consolidated another 11 software records and 13 OS records whose normalized names and official website URLs matched.
+- Total removed during both cleanup passes: **52 software rows and 26 OS rows**.
+- Current duplicate check finds **zero repeated normalized project names** across the loaded datasets.
+- Canonical IDs and merged-record details are documented in [`CATALOG-DUPLICATE-REVIEW.md`](https://github.com/Kamino-88/foss-atlas/blob/main/CATALOG-DUPLICATE-REVIEW.md).
+
+## Remaining verification findings
+
+- 27 software records lack both `verification_status` and `last_verified`.
+- 25 OS records lack both `license` and `last_verified`.
+- One software record (Linearity Curve / `vectornator`) is explicitly marked `open_source: false` and is missing `source_code_url`; it is excluded from the eligible software count.
+- This is a structural audit, not a live test of every external website, source repository, download link, or license statement.
 
 ## Recommended remediation order
 
-1. Keep the existing website layout and URL unchanged.
-2. Review `CATALOG-DUPLICATE-REVIEW.md` and resolve the remaining same-name/different-ID candidates. Exact duplicate cleanup has been completed for 54 records.
-3. Verify the 38 remaining later-phase software records against official project sources; add `verification_status`, `last_verified`, and `verification_sources`.
-4. Verify license and last-checked date for the 38 remaining later-phase OS records.
-5. Review the one software entry explicitly marked not open source and the one missing source-code link.
-6. Recalculate counts after editorial verification. Add new software only after remaining duplicate candidates are resolved; the current software target gap is 102 unique projects.
+1. Verify the 27 software records against official project sources; then add `verification_status`, `last_verified`, and `verification_sources`.
+2. Verify license and current status for the 25 OS records; then add `license` and `last_verified`.
+3. Decide whether to retain or remove Linearity Curve from a directory specifically for open-source software.
+4. Recalculate the catalog and review OS independence before expansion.
+5. Add at least 102 verified, genuinely unique software projects to reach the 250-project target.
 
 ## Deduplication and verification policy
 
 - Primary key: stable `id`.
-- Secondary duplicate-review key: normalized project name.
-- Shared official website hostname is a review signal only, not an automatic merge rule.
-- Exact cleanup performed: match on stable ID, normalized name, and exact official website URL; preserve missing valid fields from the duplicate record. Different-ID candidates and inconsistent same-ID records remain in the review queue.
+- Secondary review key: normalized project name, cross-checked against official website URL.
+- Shared official website hostname alone is a review signal, not an automatic merge rule.
+- Exact duplicate cleanup preserves the retained record and fills missing fields from the removed record where available.
 - `Verified`: official project information checked.
-- `Partially Verified`: basic identity and official links checked; some fields need further review.
+- `Partially Verified`: basic identity and official links checked; some fields need review.
 - `Needs Review`: record requires verification before production classification.
 - `Archived`: project is no longer active and should not be treated as an active recommendation.
 
@@ -81,7 +85,7 @@ All 72 remaining OS records currently have `open_source: true`. The 38 records i
 
 ## Phase 2 targets
 
-- 250+ unique software projects.
+- 250+ unique open-source and free-to-use software projects.
 - 50+ unique open-source operating-system projects.
 
-Targets count independent projects, not duplicated records or simple distribution flavors. This audit updates the measured baseline; it does not mark Phase 2 complete.
+Targets count independent projects, not duplicate records. This audit updates the measured baseline; it does not mark Phase 2 complete.
