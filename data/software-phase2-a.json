@@ -17,7 +17,7 @@
     "download_url": "https://www.pinta-project.com/releases/",
     "source_code_url": "https://github.com/PintaProject/Pinta",
     "status": "Active",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://www.pinta-project.com/",
       "https://github.com/PintaProject/Pinta"
@@ -159,7 +159,7 @@
     "download_url": "https://mixxx.org/download/",
     "source_code_url": "https://github.com/mixxxdj/mixxx",
     "status": "Active",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://mixxx.org/",
       "https://github.com/mixxxdj/mixxx"
@@ -183,7 +183,7 @@
     "download_url": "https://mpv.io/installation/",
     "source_code_url": "https://github.com/mpv-player/mpv",
     "status": "Active",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://mpv.io/",
       "https://github.com/mpv-player/mpv"
