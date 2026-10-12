@@ -697,7 +697,9 @@
     "last_verified": "2026-08-18",
     "verification_status": "Needs Review",
     "verification_sources": [
-      "official-project-pages"
+      "https://natrongithub.github.io/",
+      "https://natrongithub.github.io/download.html",
+      "https://github.com/NatronGitHub/Natron"
     ],
     "notes": "Legacy project website and download page need a current release/link check before this entry can be marked verified. Do not infer discontinuation from the older website alone."
   },
