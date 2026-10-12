@@ -845,7 +845,7 @@
     "verification_status": "Partially Verified"
   },
   {
-    "id": "redis",
+    "id": "valkey",
     "name": "Valkey",
     "category": "Server / Infrastructure",
     "subcategory": "In-memory Database",
@@ -873,7 +873,7 @@
     "logo_id": "valkey",
     "last_verified": "2026-10-12",
     "verification_status": "Partially Verified",
-    "notes": "This catalog entry describes Valkey, the BSD-licensed Redis-compatible fork. The stable FOSS Atlas ID remains 'redis' for compatibility; the displayed project name and links refer to Valkey, not current Redis releases. Do not confuse Valkey's BSD license with Redis Ltd.'s current source-available Redis releases."
+    "notes": "Official Valkey repository confirms BSD-3-Clause licensing. Valkey is a Redis-compatible fork and is a separate project from current Redis releases."
   },
   {
     "id": "nextcloud",
@@ -2412,15 +2412,16 @@
       "Linux"
     ],
     "official_website": "https://wiki.gnome.org/Apps/Dia",
-    "download_url": "https://sourceforge.net/projects/dia-installer/",
+    "download_url": "https://download.gnome.org/sources/dia/",
     "source_code_url": "https://gitlab.gnome.org/GNOME/dia",
     "alternative_to": [
       "Microsoft Visio"
     ],
     "status": "Maintenance",
     "logo_id": "dia",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-12",
+    "verification_status": "Partially Verified",
+    "notes": "Updated download link to the GNOME source release directory referenced by the archived GNOME Dia download page. The GNOME wiki is archived and its version information is old; current binary availability should be rechecked before recommending downloads."
   },
   {
     "id": "drawio",
