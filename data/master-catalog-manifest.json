@@ -1,8 +1,8 @@
 {
   "catalog_name": "FOSS Atlas Master Catalog",
   "schema_version": "1.0",
-  "catalog_version": "0.2",
-  "last_updated": "2026-09-19",
+  "catalog_version": "0.3",
+  "last_updated": "2026-10-12",
   "purpose": "Single source-of-truth manifest for the browser catalog while source datasets remain modular for GitHub Pages and Google Sites embedding.",
   "software_sources": [
     "software.json",
@@ -27,9 +27,18 @@
     "software_requires_open_source": true,
     "software_requires_free_to_use": true,
     "os_requires_open_source": true,
-    "deduplicate_by": ["id", "normalized_name", "official_website_host"],
+    "deduplicate_by": [
+      "id",
+      "normalized_name",
+      "official_website_host"
+    ],
     "prefer_record_order": "first_verified_record wins",
-    "verification_status_values": ["Verified", "Partially Verified", "Needs Review", "Archived"],
+    "verification_status_values": [
+      "Verified",
+      "Partially Verified",
+      "Needs Review",
+      "Archived"
+    ],
     "logo_policy": "Use logos.json first, then official-site favicon, then generated initials fallback",
     "official_link_policy": "Prefer the project's official website; download and source links are separate fields"
   },
