@@ -149,36 +149,6 @@
     "verification_status": "Partially Verified"
   },
   {
-    "id": "freecad-path",
-    "name": "FreeCAD Path Workbench",
-    "category": "3D / CAD",
-    "subcategory": "CAM",
-    "description": "Open-source computer-aided manufacturing workflow within FreeCAD.",
-    "developer": "FreeCAD community",
-    "license": "LGPL-2.1-or-later",
-    "license_spdx": [
-      "LGPL-2.1-or-later"
-    ],
-    "open_source": true,
-    "free_to_use": true,
-    "pricing_model": "Free",
-    "platforms": [
-      "Windows",
-      "macOS",
-      "Linux"
-    ],
-    "official_website": "https://www.freecad.org/",
-    "download_url": "https://www.freecad.org/downloads.php",
-    "source_code_url": "https://github.com/FreeCAD/FreeCAD",
-    "alternative_to": [
-      "Fusion 360"
-    ],
-    "status": "Active",
-    "logo_id": "freecad",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
-  },
-  {
     "id": "kicad",
     "name": "KiCad",
     "category": "Science & Engineering",
@@ -901,8 +871,9 @@
     ],
     "status": "Active",
     "logo_id": "valkey",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-12",
+    "verification_status": "Partially Verified",
+    "notes": "This catalog entry describes Valkey, the BSD-licensed Redis-compatible fork. The stable FOSS Atlas ID remains 'redis' for compatibility; the displayed project name and links refer to Valkey, not current Redis releases. Do not confuse Valkey's BSD license with Redis Ltd.'s current source-available Redis releases."
   },
   {
     "id": "nextcloud",
@@ -1182,10 +1153,11 @@
     "alternative_to": [
       "CCleaner"
     ],
-    "status": "Maintenance",
+    "status": "Archived",
     "logo_id": "stacer",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-12",
+    "verification_status": "Archived",
+    "notes": "Official GitHub README states the project has been abandoned and there will be no further releases. Retained as an archived historical option; use caution with current systems."
   },
   {
     "id": "bleachbit",
