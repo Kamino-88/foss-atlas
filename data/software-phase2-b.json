@@ -41,7 +41,7 @@
     "download_url": "https://www.spyder-ide.org/",
     "source_code_url": "https://github.com/spyder-ide/spyder",
     "status": "Active",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://www.spyder-ide.org/",
       "https://github.com/spyder-ide/spyder"
@@ -65,7 +65,7 @@
     "download_url": "https://neovim.io/",
     "source_code_url": "https://github.com/neovim/neovim",
     "status": "Active",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://neovim.io/",
       "https://github.com/neovim/neovim"
@@ -89,7 +89,7 @@
     "download_url": "https://www.vim.org/download.php",
     "source_code_url": "https://github.com/vim/vim",
     "status": "Active",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://www.vim.org/",
       "https://github.com/vim/vim"
