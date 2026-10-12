@@ -2,7 +2,7 @@
 
 Audit date: 2026-10-12  
 Catalog version in manifest: 0.2  
-Scope: all eight JSON datasets currently loaded by `app.js`. This is a structural metadata audit; external URLs and license claims have not all been independently live-tested.
+Scope: all eight JSON datasets currently loaded by `app.js`. This report distinguishes a source review from a complete legal/license audit.
 
 ## Executive result
 
@@ -41,7 +41,17 @@ The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve
 | `data/operating-systems-phase2-b.json` | 16 |
 | **Total** | **59** |
 
-All 59 current OS records are marked open source and free to use. Operating-system license metadata is now present for the 25 records that lacked it; because distributions bundle many components, most use the careful label “Mixed open-source licenses; package-specific” rather than implying a single license covers the entire distribution.
+## Verification pass — 2026-10-12
+
+The four later-phase datasets were reviewed against their listed official project websites and source-code repositories. All **28 software records** and **25 OS records** in these four files now have `last_verified: "2026-10-12"` and source-reference URLs.
+
+- Software: 27 records are marked `Partially Verified`; GNU Emacs was already partially verified and its date was refreshed. The review covers project identity and the listed official/source links; this does not imply every platform build, download mirror, dependency, or every third-party component was independently tested.
+- Operating systems: 24 records are marked `Partially Verified`; Clear Linux OS is marked `Archived` with `status: "Discontinued"`, based on Intel's archived project repository, which explicitly says it is no longer maintained. See [Intel's archived Clear Linux repository](https://github.com/clearlinux/distribution).
+- OS licenses are described as mixed and package-specific where appropriate. They should not be interpreted as one blanket license for every bundled package.
+- A small number of license labels were corrected or qualified during the pass: LibreCAD (GPL-2.0-only), SolveSpace (GPL-3.0-only), Anki (AGPL-3.0-or-later), and Forgejo (GPL-3.0-or-later for versions 9.0+; older versions through 8.0 were MIT). Check the specific release/version before relying on a license statement.
+- Source URLs are recorded in each record's `verification_sources`. This was a manual editorial source review, not automated uptime monitoring or legal advice. A record remains `Partially Verified` where version-specific licensing or all included components could not be fully confirmed.
+
+Examples of direct repository license evidence reviewed include [Pinta](https://github.com/PintaProject/Pinta), [MeshLab](https://github.com/cnr-isti-vclab/meshlab), [Mixxx](https://github.com/mixxxdj/mixxx), [mpv](https://github.com/mpv-player/mpv), [Spyder](https://github.com/spyder-ide/spyder), [Neovim](https://github.com/neovim/neovim), [Jenkins](https://github.com/jenkinsci/jenkins), [Gitea](https://github.com/go-gitea/gitea), and [Immich](https://github.com/immich-app/immich).
 
 ## Duplicate cleanup
 
@@ -51,31 +61,23 @@ All 59 current OS records are marked open source and free to use. Operating-syst
 - Current structural check finds no repeated normalized project names in the eight loaded datasets.
 - Canonical IDs and the list of merged records are documented in [`CATALOG-DUPLICATE-REVIEW.md`](https://github.com/Kamino-88/foss-atlas/blob/main/CATALOG-DUPLICATE-REVIEW.md).
 
-## Verification metadata status
+## Remaining work
 
-- The 27 software records that lacked verification metadata now have `verification_status` and `verification_sources` fields. All 27 are labelled `Needs Review` until official sources have actually been checked.
-- Those 27 records still lack `last_verified`. No verification date was invented.
-- The 25 OS records that lacked license metadata now have `license`, `verification_status`, and `verification_sources` fields. All 25 are labelled `Needs Review` until official sources and component-specific licensing have actually been checked.
-- The source fields point to the project's official website and source repository as references. Their presence does not itself mean the URLs were successfully tested or that every license was independently confirmed.
-- Linearity Curve (`vectornator`) remains excluded pending a decision on whether it belongs in a directory specifically for open-source software.
-
-## Recommended next steps
-
-1. Open the official project and source links for the 27 software records and 25 OS records; record a real verification date only after checking them.
-2. Check package-specific license information for distributions; do not substitute a single blanket license where it would be misleading.
-3. Decide whether to remove or separately classify Linearity Curve.
-4. Review whether the 59 OS entries represent distinct projects, editions, or flavors.
+1. Decide whether to remove or separately classify Linearity Curve, which is explicitly marked non-open-source.
+2. Review whether the 59 OS entries represent distinct projects, editions, or flavors.
+3. Confirm the exact current release/version license for entries where the license varies by release or bundled components.
+4. Test all download URLs and source links for reachability on a scheduled basis.
 5. Add at least 102 additional verified unique software projects to reach the 250-project target.
 
-## Deduplication and verification policy
+## Verification policy
 
 - Stable `id` is the primary key.
 - Normalized project name and official website URL are used for duplicate review.
 - Shared website hostnames alone are not sufficient to merge records.
-- `Verified`: official project information has been checked.
-- `Partially Verified`: identity or some metadata has been reviewed, but important fields remain unchecked.
-- `Needs Review`: record needs verification before being treated as fully verified.
-- `Archived`: project is no longer active and should not be treated as an active recommendation.
+- `Verified`: the required fields and official sources have been checked to the catalog's full editorial standard.
+- `Partially Verified`: identity and selected metadata/source links were checked, but some fields or bundled-component details remain unchecked.
+- `Needs Review`: record requires source verification.
+- `Archived`: project is no longer maintained and is shown only if the directory retains discontinued projects.
 
 ## Logo policy
 
