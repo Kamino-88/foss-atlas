@@ -16,7 +16,12 @@
     "official_website": "https://siril.org/",
     "download_url": "https://siril.org/download/",
     "source_code_url": "https://gitlab.com/free-astro/siril",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://siril.org/",
+      "https://gitlab.com/free-astro/siril"
+    ]
   },
   {
     "id": "spyder",
@@ -35,7 +40,12 @@
     "official_website": "https://www.spyder-ide.org/",
     "download_url": "https://www.spyder-ide.org/",
     "source_code_url": "https://github.com/spyder-ide/spyder",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://www.spyder-ide.org/",
+      "https://github.com/spyder-ide/spyder"
+    ]
   },
   {
     "id": "neovim",
@@ -54,7 +64,12 @@
     "official_website": "https://neovim.io/",
     "download_url": "https://neovim.io/",
     "source_code_url": "https://github.com/neovim/neovim",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://neovim.io/",
+      "https://github.com/neovim/neovim"
+    ]
   },
   {
     "id": "vim",
@@ -73,7 +88,12 @@
     "official_website": "https://www.vim.org/",
     "download_url": "https://www.vim.org/download.php",
     "source_code_url": "https://github.com/vim/vim",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://www.vim.org/",
+      "https://github.com/vim/vim"
+    ]
   },
   {
     "id": "emacs",
@@ -121,7 +141,12 @@
     "official_website": "https://about.gitlab.com/",
     "download_url": "https://about.gitlab.com/install/",
     "source_code_url": "https://gitlab.com/gitlab-org/gitlab",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://about.gitlab.com/",
+      "https://gitlab.com/gitlab-org/gitlab"
+    ]
   },
   {
     "id": "gitea",
@@ -140,7 +165,12 @@
     "official_website": "https://about.gitea.com/",
     "download_url": "https://about.gitea.com/products/gitea/",
     "source_code_url": "https://github.com/go-gitea/gitea",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://about.gitea.com/",
+      "https://github.com/go-gitea/gitea"
+    ]
   },
   {
     "id": "forgejo",
@@ -159,7 +189,12 @@
     "official_website": "https://forgejo.org/",
     "download_url": "https://forgejo.org/download/",
     "source_code_url": "https://codeberg.org/forgejo/forgejo",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://forgejo.org/",
+      "https://codeberg.org/forgejo/forgejo"
+    ]
   },
   {
     "id": "jenkins",
@@ -179,7 +214,12 @@
     "official_website": "https://www.jenkins.io/",
     "download_url": "https://www.jenkins.io/download/",
     "source_code_url": "https://github.com/jenkinsci/jenkins",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://www.jenkins.io/",
+      "https://github.com/jenkinsci/jenkins"
+    ]
   },
   {
     "id": "kubernetes",
@@ -197,7 +237,12 @@
     "official_website": "https://kubernetes.io/",
     "download_url": "https://kubernetes.io/docs/setup/",
     "source_code_url": "https://github.com/kubernetes/kubernetes",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://kubernetes.io/",
+      "https://github.com/kubernetes/kubernetes"
+    ]
   },
   {
     "id": "caddy",
@@ -216,7 +261,12 @@
     "official_website": "https://caddyserver.com/",
     "download_url": "https://caddyserver.com/download",
     "source_code_url": "https://github.com/caddyserver/caddy",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://caddyserver.com/",
+      "https://github.com/caddyserver/caddy"
+    ]
   },
   {
     "id": "wireguard",
@@ -237,7 +287,12 @@
     "official_website": "https://www.wireguard.com/",
     "download_url": "https://www.wireguard.com/install/",
     "source_code_url": "https://git.zx2c4.com/wireguard-tools/",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://www.wireguard.com/",
+      "https://git.zx2c4.com/wireguard-tools/"
+    ]
   },
   {
     "id": "immich",
@@ -257,7 +312,12 @@
     "official_website": "https://immich.app/",
     "download_url": "https://immich.app/docs/install/overview",
     "source_code_url": "https://github.com/immich-app/immich",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://immich.app/",
+      "https://github.com/immich-app/immich"
+    ]
   },
   {
     "id": "jellyfin",
@@ -279,7 +339,12 @@
     "official_website": "https://jellyfin.org/",
     "download_url": "https://jellyfin.org/downloads/",
     "source_code_url": "https://github.com/jellyfin/jellyfin",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://jellyfin.org/",
+      "https://github.com/jellyfin/jellyfin"
+    ]
   },
   {
     "id": "transmission",
@@ -298,7 +363,12 @@
     "official_website": "https://transmissionbt.com/",
     "download_url": "https://transmissionbt.com/download/",
     "source_code_url": "https://github.com/transmission/transmission",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://transmissionbt.com/",
+      "https://github.com/transmission/transmission"
+    ]
   },
   {
     "id": "standard-notes",
@@ -320,7 +390,12 @@
     "official_website": "https://standardnotes.com/",
     "download_url": "https://standardnotes.com/download",
     "source_code_url": "https://github.com/standardnotes/app",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://standardnotes.com/",
+      "https://github.com/standardnotes/app"
+    ]
   },
   {
     "id": "thunderbird-phase2",
@@ -339,6 +414,11 @@
     "official_website": "https://www.thunderbird.net/",
     "download_url": "https://www.thunderbird.net/download/",
     "source_code_url": "https://github.com/mozilla/releases-comm-central",
-    "status": "Active"
+    "status": "Active",
+    "verification_status": "Needs Review",
+    "verification_sources": [
+      "https://www.thunderbird.net/",
+      "https://github.com/mozilla/releases-comm-central"
+    ]
   }
 ]
