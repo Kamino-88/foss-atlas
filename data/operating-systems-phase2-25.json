@@ -15,12 +15,13 @@
     "official_website": "https://www.opensuse.org/",
     "download_url": "https://get.opensuse.org/tumbleweed/",
     "source_code_url": "https://github.com/openSUSE",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.opensuse.org/",
       "https://github.com/openSUSE"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "opensuse-leap",
@@ -38,12 +39,13 @@
     "official_website": "https://www.opensuse.org/",
     "download_url": "https://get.opensuse.org/leap/",
     "source_code_url": "https://github.com/openSUSE",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.opensuse.org/",
       "https://github.com/openSUSE"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "antix",
@@ -61,12 +63,13 @@
     "official_website": "https://antixlinux.com/",
     "download_url": "https://antixlinux.com/download/",
     "source_code_url": "https://github.com/antix-linux",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://antixlinux.com/",
       "https://github.com/antix-linux"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "nixos",
@@ -85,12 +88,13 @@
     "official_website": "https://nixos.org/",
     "download_url": "https://nixos.org/download/",
     "source_code_url": "https://github.com/NixOS/nixpkgs",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://nixos.org/",
       "https://github.com/NixOS/nixpkgs"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "clear-linux",
@@ -102,18 +106,20 @@
       "Server"
     ],
     "beginner_friendly": false,
-    "status": "Active",
+    "status": "Discontinued",
     "open_source": true,
     "free_to_use": true,
     "official_website": "https://www.clearlinux.org/",
     "download_url": "https://www.clearlinux.org/downloads.html",
     "source_code_url": "https://github.com/clearlinux",
-    "verification_status": "Needs Review",
+    "verification_status": "Archived",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.clearlinux.org/",
       "https://github.com/clearlinux"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Intel's official Clear Linux repositories state the project is discontinued and no longer maintained by Intel. Keep listed only if FOSS Atlas includes discontinued projects."
   },
   {
     "id": "openmandriva",
@@ -130,12 +136,13 @@
     "official_website": "https://www.openmandriva.org/",
     "download_url": "https://www.openmandriva.org/en/download/",
     "source_code_url": "https://github.com/OpenMandrivaAssociation",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.openmandriva.org/",
       "https://github.com/OpenMandrivaAssociation"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "mageia",
@@ -153,12 +160,13 @@
     "official_website": "https://www.mageia.org/",
     "download_url": "https://www.mageia.org/en/downloads/",
     "source_code_url": "https://gitweb.mageia.org/",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.mageia.org/",
       "https://gitweb.mageia.org/"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "trisquel",
@@ -176,12 +184,14 @@
     "official_website": "https://trisquel.info/",
     "download_url": "https://trisquel.info/en/download",
     "source_code_url": "https://gitlab.trisquel.org/trisquel",
-    "verification_status": "Needs Review",
-    "license": "Free-software licenses; individual package licenses vary",
+    "verification_status": "Partially Verified",
+    "license": "Free-software packages; package-specific licenses",
     "verification_sources": [
       "https://trisquel.info/",
       "https://gitlab.trisquel.org/trisquel"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Official FAQ states Trisquel contains only free software and directs users to each package's license for exact terms."
   },
   {
     "id": "qubes-os",
@@ -199,11 +209,13 @@
     "official_website": "https://www.qubes-os.org/",
     "download_url": "https://www.qubes-os.org/downloads/",
     "source_code_url": "https://github.com/QubesOS",
-    "verification_status": "Needs Review",
-    "license": "GPL-2.0 for the OS compilation; individual packages retain their own licenses",
+    "verification_status": "Partially Verified",
+    "license": "GPL-2.0 (compilation; package licenses vary)",
     "verification_sources": [
       "https://www.qubes-os.org/",
       "https://github.com/QubesOS"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Official Qubes documentation says the OS compilation is GPLv2 while individual included packages retain their own licenses."
   }
 ]
