@@ -1,0 +1,30 @@
+name: Catalog Link Check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check catalog links
+        run: python scripts/check_catalog_links.py
+      - name: Upload link-check report
+        uses: actions/upload-artifact@v4
+        with:
+          name: foss-atlas-link-check
+          path: link-check-reports/
+          if-no-files-found: error
+          retention-days: 90
