@@ -43,7 +43,7 @@ The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve
 
 ## Targeted status and link review — 2026-10-12
 
-- **Stacer:** marked `Archived`. Its official GitHub README explicitly says the project has been abandoned and there will be no further releases. [Official repository](https://github.com/oguzhaninan/Stacer). <https://github.com/oguzhaninan/Stacer>
+- **Stacer:** marked `Archived`. Its official GitHub README explicitly says the project has been abandoned and there will be no further releases. [Official repository](https://github.com/oguzhaninan/Stacer).
 - **Valkey:** renamed the record ID from `redis` to `valkey`, added a Valkey logo mapping, and retained the BSD-3-Clause license. The official repository identifies Valkey as a distinct Redis-compatible project and lists BSD-3-Clause. [Valkey repository](https://github.com/valkey-io/valkey).
 - **Apache OpenOffice:** retained status `Maintenance`. The official project blog reported on 26 September 2026 that 4.1.17 was in preparation and described further development towards a future major release. [Official development update](https://openoffice.apache.org/blog/what-is-going-on-in-Apache-OpenOffice-development.html).
 - **Dia:** updated its download link to the GNOME source release directory referenced by the archived GNOME download page. The GNOME wiki warns that its version information may be outdated, so current binary availability still needs confirmation. [Archived download page](https://wiki.gnome.org/Apps/Dia/Download).
@@ -56,7 +56,7 @@ The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve
 
 The targeted status decisions above are based on the official project sources linked in this report. **Not every download/source URL in all 207 remaining catalog records has been independently requested and tested.** A browser-visible page, a source repository, and a working downloadable binary are separate checks. To avoid false assurances, unresolved links remain flagged rather than being assigned a successful verification date.
 
-A weekly automated link-check workflow is being added to test official website, download and source URLs, record HTTP status/errors, and preserve a report artifact for review. HTTP errors such as 403/429 will be treated as “needs manual review”, not automatically as dead links.
+A weekly automated link-check workflow is now available at [GitHub Actions](https://github.com/Kamino-88/foss-atlas/actions/workflows/catalog-link-check.yml). It tests official website, download and source URLs, records HTTP status/errors, and preserves CSV/JSON report artifacts for 90 days. HTTP errors such as 403/429 are treated as “needs manual review”, not automatically as dead links. The first workflow run has not yet been executed by this edit.
 
 ## Duplicate cleanup
 
