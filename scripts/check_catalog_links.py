@@ -7,7 +7,7 @@ DEAD_LINK. This checker does not execute downloads or install software.
 from __future__ import annotations
 import csv
 import json
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -25,8 +25,8 @@ DATA_FILES = [
     "data/operating-systems-phase2-b.json",
 ]
 URL_FIELDS = ("official_website", "download_url", "source_code_url")
-TIMEOUT = 15
-PAUSE_SECONDS = 0.25
+TIMEOUT = 8
+MAX_WORKERS = 16
 
 
 def check_url(url: str) -> dict:
@@ -66,6 +66,7 @@ def check_url(url: str) -> dict:
 def main() -> None:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     rows = []
+    pending = []
     for file_name in DATA_FILES:
         file_path = ROOT / file_name
         if not file_path.exists():
@@ -86,11 +87,24 @@ def main() -> None:
                                  "url_field": field, "url": "", "http_status": "", "final_url": "",
                                  "result": "MISSING_URL", "detail": "URL field is empty"})
                     continue
-                result = check_url(url)
-                rows.append({"checked_at_utc": checked_at, "data_file": file_name,
-                             "record_id": record.get("id", ""), "project_name": record.get("name", ""),
-                             "url_field": field, "url": url, **result})
-                time.sleep(PAUSE_SECONDS)
+                pending.append({"checked_at_utc": checked_at, "data_file": file_name,
+                                "record_id": record.get("id", ""), "project_name": record.get("name", ""),
+                                "url_field": field, "url": url})
+
+    # Check each unique URL once, concurrently, then attach its result to every record using it.
+    unique_urls = sorted({item["url"] for item in pending})
+    checked = {}
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures = {pool.submit(check_url, url): url for url in unique_urls}
+        for future in as_completed(futures):
+            url = futures[future]
+            try:
+                checked[url] = future.result()
+            except Exception as exc:
+                checked[url] = {"http_status": None, "final_url": "", "result": "MANUAL_REVIEW",
+                                "detail": f"Checker error: {type(exc).__name__}: {exc}"}
+    for item in pending:
+        rows.append({**item, **checked[item["url"]]})
 
     out_dir = ROOT / "link-check-reports"
     out_dir.mkdir(exist_ok=True)
