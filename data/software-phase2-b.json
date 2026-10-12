@@ -17,11 +17,12 @@
     "download_url": "https://siril.org/download/",
     "source_code_url": "https://gitlab.com/free-astro/siril",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://siril.org/",
       "https://gitlab.com/free-astro/siril"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "spyder",
@@ -41,11 +42,12 @@
     "download_url": "https://www.spyder-ide.org/",
     "source_code_url": "https://github.com/spyder-ide/spyder",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.spyder-ide.org/",
       "https://github.com/spyder-ide/spyder"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "neovim",
@@ -65,11 +67,12 @@
     "download_url": "https://neovim.io/",
     "source_code_url": "https://github.com/neovim/neovim",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://neovim.io/",
       "https://github.com/neovim/neovim"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "vim",
@@ -89,11 +92,12 @@
     "download_url": "https://www.vim.org/download.php",
     "source_code_url": "https://github.com/vim/vim",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.vim.org/",
       "https://github.com/vim/vim"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "emacs",
@@ -122,8 +126,12 @@
       "Visual Studio Code"
     ],
     "logo_id": "emacs",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-12",
+    "verification_status": "Partially Verified",
+    "verification_sources": [
+      "https://www.gnu.org/software/emacs/",
+      "https://git.savannah.gnu.org/cgit/emacs.git"
+    ]
   },
   {
     "id": "gitlab-ce",
@@ -142,11 +150,12 @@
     "download_url": "https://about.gitlab.com/install/",
     "source_code_url": "https://gitlab.com/gitlab-org/gitlab",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://about.gitlab.com/",
       "https://gitlab.com/gitlab-org/gitlab"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "gitea",
@@ -166,11 +175,12 @@
     "download_url": "https://about.gitea.com/products/gitea/",
     "source_code_url": "https://github.com/go-gitea/gitea",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://about.gitea.com/",
       "https://github.com/go-gitea/gitea"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "forgejo",
@@ -178,7 +188,7 @@
     "category": "Development",
     "subcategory": "Git Hosting",
     "description": "Community-driven open-source software forge for collaborative development.",
-    "license": "MIT",
+    "license": "GPL-3.0-or-later",
     "open_source": true,
     "free_to_use": true,
     "platforms": [
@@ -190,11 +200,13 @@
     "download_url": "https://forgejo.org/download/",
     "source_code_url": "https://codeberg.org/forgejo/forgejo",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://forgejo.org/",
       "https://codeberg.org/forgejo/forgejo"
-    ]
+    ],
+    "last_verified": "2026-10-12",
+    "notes": "Official Forgejo FAQ states versions 9.0 and later are GPL v3+; older versions through 8.0 were MIT. Verify this entry against the current release line."
   },
   {
     "id": "jenkins",
@@ -215,11 +227,12 @@
     "download_url": "https://www.jenkins.io/download/",
     "source_code_url": "https://github.com/jenkinsci/jenkins",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.jenkins.io/",
       "https://github.com/jenkinsci/jenkins"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "kubernetes",
@@ -238,11 +251,12 @@
     "download_url": "https://kubernetes.io/docs/setup/",
     "source_code_url": "https://github.com/kubernetes/kubernetes",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://kubernetes.io/",
       "https://github.com/kubernetes/kubernetes"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "caddy",
@@ -262,11 +276,12 @@
     "download_url": "https://caddyserver.com/download",
     "source_code_url": "https://github.com/caddyserver/caddy",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://caddyserver.com/",
       "https://github.com/caddyserver/caddy"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "wireguard",
@@ -288,11 +303,12 @@
     "download_url": "https://www.wireguard.com/install/",
     "source_code_url": "https://git.zx2c4.com/wireguard-tools/",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.wireguard.com/",
       "https://git.zx2c4.com/wireguard-tools/"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "immich",
@@ -313,11 +329,12 @@
     "download_url": "https://immich.app/docs/install/overview",
     "source_code_url": "https://github.com/immich-app/immich",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://immich.app/",
       "https://github.com/immich-app/immich"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "jellyfin",
@@ -340,11 +357,12 @@
     "download_url": "https://jellyfin.org/downloads/",
     "source_code_url": "https://github.com/jellyfin/jellyfin",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://jellyfin.org/",
       "https://github.com/jellyfin/jellyfin"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "transmission",
@@ -364,11 +382,12 @@
     "download_url": "https://transmissionbt.com/download/",
     "source_code_url": "https://github.com/transmission/transmission",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://transmissionbt.com/",
       "https://github.com/transmission/transmission"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "standard-notes",
@@ -391,11 +410,12 @@
     "download_url": "https://standardnotes.com/download",
     "source_code_url": "https://github.com/standardnotes/app",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://standardnotes.com/",
       "https://github.com/standardnotes/app"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   },
   {
     "id": "thunderbird-phase2",
@@ -415,10 +435,11 @@
     "download_url": "https://www.thunderbird.net/download/",
     "source_code_url": "https://github.com/mozilla/releases-comm-central",
     "status": "Active",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "verification_sources": [
       "https://www.thunderbird.net/",
       "https://github.com/mozilla/releases-comm-central"
-    ]
+    ],
+    "last_verified": "2026-10-12"
   }
 ]
