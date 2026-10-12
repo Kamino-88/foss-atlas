@@ -51,11 +51,11 @@ The remaining same-name duplicate candidates have now been consolidated after ma
 
 ## Remaining data-quality work
 
+- The 28 software and 25 OS records in the later-phase datasets now have `last_verified: 2026-10-12` and official/source repository references.
+- These records remain `Partially Verified` where version-specific license or bundled-component details are not fully confirmed. Clear Linux OS is marked `Archived` / `Discontinued` based on Intel's archived project repository.
 - One software record, Linearity Curve (`vectornator`), is explicitly marked `open_source: false` and has no `source_code_url`; it is excluded from the eligible FOSS software count.
-- The 27 software records that needed metadata now have `verification_status: Needs Review` and `verification_sources`. All 27 still need a real `last_verified` date after checking the sources.
-- The 25 OS records that needed metadata now have a license note, `verification_status: Needs Review`, and `verification_sources`. All 25 still need a real `last_verified` date and a check of the distribution's component-specific licensing.
-- Most OS license notes say “Mixed open-source licenses; package-specific” because a distribution typically contains components under different licenses. These are cautious catalog notes, not claims that a single license covers the whole distribution.
-- Official URLs are recorded as verification references, but not all have been independently tested in this pass. Do not invent verification dates.
+- Most OS license notes say “Mixed open-source licenses; package-specific” because a distribution typically contains components under different licenses. These notes do not mean one license covers every component.
+- This was a manual source review, not a complete legal audit or automated uptime test. Recheck version-specific licensing and test download/source links before marking records fully verified.
 
 ## Links
 
