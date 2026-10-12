@@ -15,7 +15,12 @@
     "official_website": "https://crux.nu/",
     "download_url": "https://crux.nu/Main/Download",
     "source_code_url": "https://git.crux.nu/",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://crux.nu/",
+      "https://git.crux.nu/"
+    ]
   },
   {
     "id": "puppy-linux",
@@ -34,7 +39,12 @@
     "official_website": "https://puppylinux-woof-ce.github.io/",
     "download_url": "https://puppylinux-woof-ce.github.io/",
     "source_code_url": "https://github.com/puppylinux-woof-CE",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://puppylinux-woof-ce.github.io/",
+      "https://github.com/puppylinux-woof-CE"
+    ]
   },
   {
     "id": "bodhi-linux",
@@ -52,7 +62,12 @@
     "official_website": "https://www.bodhilinux.com/",
     "download_url": "https://www.bodhilinux.com/download/",
     "source_code_url": "https://github.com/BodhiLinux",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://www.bodhilinux.com/",
+      "https://github.com/BodhiLinux"
+    ]
   },
   {
     "id": "lubuntu",
@@ -70,7 +85,12 @@
     "official_website": "https://lubuntu.me/",
     "download_url": "https://lubuntu.me/downloads/",
     "source_code_url": "https://git.lubuntu.me/",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://lubuntu.me/",
+      "https://git.lubuntu.me/"
+    ]
   },
   {
     "id": "xubuntu",
@@ -88,7 +108,12 @@
     "official_website": "https://xubuntu.org/",
     "download_url": "https://xubuntu.org/download/",
     "source_code_url": "https://code.launchpad.net/xubuntu",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://xubuntu.org/",
+      "https://code.launchpad.net/xubuntu"
+    ]
   },
   {
     "id": "ubuntu-mate",
@@ -106,7 +131,12 @@
     "official_website": "https://ubuntu-mate.org/",
     "download_url": "https://ubuntu-mate.org/download/",
     "source_code_url": "https://gitlab.com/ubuntu-mate",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://ubuntu-mate.org/",
+      "https://gitlab.com/ubuntu-mate"
+    ]
   },
   {
     "id": "kubuntu",
@@ -124,7 +154,12 @@
     "official_website": "https://kubuntu.org/",
     "download_url": "https://kubuntu.org/getkubuntu/",
     "source_code_url": "https://code.launchpad.net/kubuntu",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://kubuntu.org/",
+      "https://code.launchpad.net/kubuntu"
+    ]
   },
   {
     "id": "ubuntu-studio",
@@ -143,7 +178,12 @@
     "official_website": "https://ubuntustudio.org/",
     "download_url": "https://ubuntustudio.org/download/",
     "source_code_url": "https://gitlab.com/ubuntustudio",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://ubuntustudio.org/",
+      "https://gitlab.com/ubuntustudio"
+    ]
   },
   {
     "id": "ubuntu-budgie",
@@ -161,7 +201,12 @@
     "official_website": "https://ubuntubudgie.org/",
     "download_url": "https://ubuntubudgie.org/downloads/",
     "source_code_url": "https://github.com/UbuntuBudgie",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://ubuntubudgie.org/",
+      "https://github.com/UbuntuBudgie"
+    ]
   },
   {
     "id": "deepin",
@@ -179,7 +224,12 @@
     "official_website": "https://www.deepin.org/",
     "download_url": "https://www.deepin.org/en/download/",
     "source_code_url": "https://github.com/linuxdeepin",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://www.deepin.org/",
+      "https://github.com/linuxdeepin"
+    ]
   },
   {
     "id": "peppermint-os",
@@ -197,7 +247,12 @@
     "official_website": "https://peppermintos.com/",
     "download_url": "https://peppermintos.com/installation/",
     "source_code_url": "https://github.com/peppermintos",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://peppermintos.com/",
+      "https://github.com/peppermintos"
+    ]
   },
   {
     "id": "q4os",
@@ -215,7 +270,12 @@
     "official_website": "https://www.q4os.org/",
     "download_url": "https://www.q4os.org/downloads1.html",
     "source_code_url": "https://github.com/q4osteam",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://www.q4os.org/",
+      "https://github.com/q4osteam"
+    ]
   },
   {
     "id": "devuan",
@@ -234,7 +294,12 @@
     "official_website": "https://www.devuan.org/",
     "download_url": "https://www.devuan.org/get-devuan",
     "source_code_url": "https://git.devuan.org/",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://www.devuan.org/",
+      "https://git.devuan.org/"
+    ]
   },
   {
     "id": "slax",
@@ -253,7 +318,12 @@
     "official_website": "https://www.slax.org/",
     "download_url": "https://www.slax.org/",
     "source_code_url": "https://github.com/Slax-Linux",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://www.slax.org/",
+      "https://github.com/Slax-Linux"
+    ]
   },
   {
     "id": "porteus",
@@ -272,7 +342,12 @@
     "official_website": "https://www.porteus.org/",
     "download_url": "https://www.porteus.org/download.html",
     "source_code_url": "https://github.com/Porteus-Linux",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "Mixed open-source licenses; package-specific",
+    "verification_sources": [
+      "https://www.porteus.org/",
+      "https://github.com/Porteus-Linux"
+    ]
   },
   {
     "id": "illumos",
@@ -290,6 +365,11 @@
     "official_website": "https://illumos.org/",
     "download_url": "https://illumos.org/docs/about/distro/",
     "source_code_url": "https://github.com/illumos/illumos-gate",
-    "verification_status": "Verified"
+    "verification_status": "Partially Verified",
+    "license": "CDDL and other component-specific licenses",
+    "verification_sources": [
+      "https://illumos.org/",
+      "https://github.com/illumos/illumos-gate"
+    ]
   }
 ]
