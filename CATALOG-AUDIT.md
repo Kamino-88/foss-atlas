@@ -53,9 +53,9 @@ All 59 current OS records are marked open source and free to use. Operating-syst
 
 ## Verification metadata status
 
-- The 27 software records that lacked verification metadata now have `verification_status` and `verification_sources` fields. Six records are labelled `Partially Verified`; the other 21 are labelled `Needs Review`.
+- The 27 software records that lacked verification metadata now have `verification_status` and `verification_sources` fields. All 27 are labelled `Needs Review` until official sources have actually been checked.
 - Those 27 records still lack `last_verified`. No verification date was invented.
-- The 25 OS records that lacked license metadata now have `license`, `verification_status`, and `verification_sources` fields. They are marked `Partially Verified`, and still lack `last_verified`.
+- The 25 OS records that lacked license metadata now have `license`, `verification_status`, and `verification_sources` fields. All 25 are labelled `Needs Review` until official sources and component-specific licensing have actually been checked.
 - The source fields point to the project's official website and source repository as references. Their presence does not itself mean the URLs were successfully tested or that every license was independently confirmed.
 - Linearity Curve (`vectornator`) remains excluded pending a decision on whether it belongs in a directory specifically for open-source software.
 
