@@ -2,7 +2,7 @@
 
 Audit date: 2026-10-12  
 Catalog version in manifest: 0.2  
-Scope: all eight JSON datasets currently loaded by `app.js`. This is a structural/count audit of repository data; it is not a live verification that every external URL resolves.
+Scope: all eight JSON datasets currently loaded by `app.js`. This is a structural metadata audit; external URLs and license claims have not all been independently live-tested.
 
 ## Executive result
 
@@ -15,66 +15,66 @@ Scope: all eight JSON datasets currently loaded by `app.js`. This is a structura
 | Phase 2 target | 250 | 50 |
 | Current target gap / surplus | **102 short** | **9 above target** |
 
-The website was previously confirmed by the project owner to display 148 software projects and 59 operating systems. This matches the eligible counts calculated from the current data. The software target is not yet met. The OS count exceeds 50, but the editorial review should still ensure that entries are meaningfully independent projects rather than editions or flavors.
+The project owner previously confirmed that the website displays 148 software projects and 59 operating systems. These counts match the current data. The OS total still needs an editorial check to distinguish independent OS projects from editions and flavors.
 
 ## Source datasets and row counts
 
 ### Software
 
-| File | Rows | Notes |
-|---|---:|---|
-| `data/software.json` | 28 | Base dataset |
-| `data/software-expansion-100.json` | 93 | Includes one record explicitly marked `open_source: false` |
-| `data/software-phase2-a.json` | 11 | Remaining metadata review is needed |
-| `data/software-phase2-b.json` | 17 | Remaining metadata review is needed |
-| **Total** | **149** | **148 eligible open-source and free-to-use projects** |
+| File | Rows |
+|---|---:|
+| `data/software.json` | 28 |
+| `data/software-expansion-100.json` | 93 |
+| `data/software-phase2-a.json` | 11 |
+| `data/software-phase2-b.json` | 17 |
+| **Total** | **149** |
 
-The current engine requires both `open_source: true` and `free_to_use: true`. One record, Linearity Curve (`vectornator`), is explicitly marked not open source and is excluded. That record also lacks a `source_code_url`.
+The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve (`vectornator`) is marked `open_source: false`, is excluded from the eligible software count, and has no `source_code_url`.
 
 ### Operating systems
 
-| File | Rows | Notes |
-|---|---:|---|
-| `data/operating-systems-v1.json` | 8 | Base dataset |
-| `data/operating-systems-expansion-25.json` | 26 | Expansion dataset |
-| `data/operating-systems-phase2-25.json` | 9 | Metadata review is needed |
-| `data/operating-systems-phase2-b.json` | 16 | Metadata review is needed |
-| **Total** | **59** | **59 unique OS names** |
+| File | Rows |
+|---|---:|
+| `data/operating-systems-v1.json` | 8 |
+| `data/operating-systems-expansion-25.json` | 26 |
+| `data/operating-systems-phase2-25.json` | 9 |
+| `data/operating-systems-phase2-b.json` | 16 |
+| **Total** | **59** |
 
-All 59 current OS records have `open_source: true` and `free_to_use: true`. Twenty-five OS records still need a license field and last-verified date.
+All 59 current OS records are marked open source and free to use. Operating-system license metadata is now present for the 25 records that lacked it; because distributions bundle many components, most use the careful label “Mixed open-source licenses; package-specific” rather than implying a single license covers the entire distribution.
 
-## Duplicate cleanup results
+## Duplicate cleanup
 
-- Earlier exact-match cleanup removed 41 software records and 13 OS records.
-- Phase 2C review consolidated another 11 software records and 13 OS records whose normalized names and official website URLs matched.
-- Total removed during both cleanup passes: **52 software rows and 26 OS rows**.
-- Current duplicate check finds **zero repeated normalized project names** across the loaded datasets.
-- Canonical IDs and merged-record details are documented in [`CATALOG-DUPLICATE-REVIEW.md`](https://github.com/Kamino-88/foss-atlas/blob/main/CATALOG-DUPLICATE-REVIEW.md).
+- Earlier exact-match cleanup removed 41 software rows and 13 OS rows.
+- Phase 2C duplicate review consolidated 11 more software rows and 13 more OS rows.
+- Total removed across both passes: **52 software rows and 26 OS rows**.
+- Current structural check finds no repeated normalized project names in the eight loaded datasets.
+- Canonical IDs and the list of merged records are documented in [`CATALOG-DUPLICATE-REVIEW.md`](https://github.com/Kamino-88/foss-atlas/blob/main/CATALOG-DUPLICATE-REVIEW.md).
 
-## Remaining verification findings
+## Verification metadata status
 
-- 27 software records lack both `verification_status` and `last_verified`.
-- 25 OS records lack both `license` and `last_verified`.
-- One software record (Linearity Curve / `vectornator`) is explicitly marked `open_source: false` and is missing `source_code_url`; it is excluded from the eligible software count.
-- This is a structural audit, not a live test of every external website, source repository, download link, or license statement.
+- The 27 software records that lacked verification metadata now have `verification_status` and `verification_sources` fields. Six records are labelled `Partially Verified`; the other 21 are labelled `Needs Review`.
+- Those 27 records still lack `last_verified`. No verification date was invented.
+- The 25 OS records that lacked license metadata now have `license`, `verification_status`, and `verification_sources` fields. They are marked `Partially Verified`, and still lack `last_verified`.
+- The source fields point to the project's official website and source repository as references. Their presence does not itself mean the URLs were successfully tested or that every license was independently confirmed.
+- Linearity Curve (`vectornator`) remains excluded pending a decision on whether it belongs in a directory specifically for open-source software.
 
-## Recommended remediation order
+## Recommended next steps
 
-1. Verify the 27 software records against official project sources; then add `verification_status`, `last_verified`, and `verification_sources`.
-2. Verify license and current status for the 25 OS records; then add `license` and `last_verified`.
-3. Decide whether to retain or remove Linearity Curve from a directory specifically for open-source software.
-4. Recalculate the catalog and review OS independence before expansion.
-5. Add at least 102 verified, genuinely unique software projects to reach the 250-project target.
+1. Open the official project and source links for the 27 software records and 25 OS records; record a real verification date only after checking them.
+2. Check package-specific license information for distributions; do not substitute a single blanket license where it would be misleading.
+3. Decide whether to remove or separately classify Linearity Curve.
+4. Review whether the 59 OS entries represent distinct projects, editions, or flavors.
+5. Add at least 102 additional verified unique software projects to reach the 250-project target.
 
 ## Deduplication and verification policy
 
-- Primary key: stable `id`.
-- Secondary review key: normalized project name, cross-checked against official website URL.
-- Shared official website hostname alone is a review signal, not an automatic merge rule.
-- Exact duplicate cleanup preserves the retained record and fills missing fields from the removed record where available.
-- `Verified`: official project information checked.
-- `Partially Verified`: basic identity and official links checked; some fields need review.
-- `Needs Review`: record requires verification before production classification.
+- Stable `id` is the primary key.
+- Normalized project name and official website URL are used for duplicate review.
+- Shared website hostnames alone are not sufficient to merge records.
+- `Verified`: official project information has been checked.
+- `Partially Verified`: identity or some metadata has been reviewed, but important fields remain unchecked.
+- `Needs Review`: record needs verification before being treated as fully verified.
 - `Archived`: project is no longer active and should not be treated as an active recommendation.
 
 ## Logo policy
