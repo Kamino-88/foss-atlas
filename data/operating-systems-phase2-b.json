@@ -15,7 +15,7 @@
     "official_website": "https://crux.nu/",
     "download_url": "https://crux.nu/Main/Download",
     "source_code_url": "https://git.crux.nu/",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://crux.nu/",
@@ -39,7 +39,7 @@
     "official_website": "https://puppylinux-woof-ce.github.io/",
     "download_url": "https://puppylinux-woof-ce.github.io/",
     "source_code_url": "https://github.com/puppylinux-woof-CE",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://puppylinux-woof-ce.github.io/",
@@ -62,7 +62,7 @@
     "official_website": "https://www.bodhilinux.com/",
     "download_url": "https://www.bodhilinux.com/download/",
     "source_code_url": "https://github.com/BodhiLinux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.bodhilinux.com/",
@@ -85,7 +85,7 @@
     "official_website": "https://lubuntu.me/",
     "download_url": "https://lubuntu.me/downloads/",
     "source_code_url": "https://git.lubuntu.me/",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://lubuntu.me/",
@@ -108,7 +108,7 @@
     "official_website": "https://xubuntu.org/",
     "download_url": "https://xubuntu.org/download/",
     "source_code_url": "https://code.launchpad.net/xubuntu",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://xubuntu.org/",
@@ -131,7 +131,7 @@
     "official_website": "https://ubuntu-mate.org/",
     "download_url": "https://ubuntu-mate.org/download/",
     "source_code_url": "https://gitlab.com/ubuntu-mate",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://ubuntu-mate.org/",
@@ -154,7 +154,7 @@
     "official_website": "https://kubuntu.org/",
     "download_url": "https://kubuntu.org/getkubuntu/",
     "source_code_url": "https://code.launchpad.net/kubuntu",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://kubuntu.org/",
@@ -178,7 +178,7 @@
     "official_website": "https://ubuntustudio.org/",
     "download_url": "https://ubuntustudio.org/download/",
     "source_code_url": "https://gitlab.com/ubuntustudio",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://ubuntustudio.org/",
@@ -201,7 +201,7 @@
     "official_website": "https://ubuntubudgie.org/",
     "download_url": "https://ubuntubudgie.org/downloads/",
     "source_code_url": "https://github.com/UbuntuBudgie",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://ubuntubudgie.org/",
@@ -224,7 +224,7 @@
     "official_website": "https://www.deepin.org/",
     "download_url": "https://www.deepin.org/en/download/",
     "source_code_url": "https://github.com/linuxdeepin",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.deepin.org/",
@@ -247,7 +247,7 @@
     "official_website": "https://peppermintos.com/",
     "download_url": "https://peppermintos.com/installation/",
     "source_code_url": "https://github.com/peppermintos",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://peppermintos.com/",
@@ -270,7 +270,7 @@
     "official_website": "https://www.q4os.org/",
     "download_url": "https://www.q4os.org/downloads1.html",
     "source_code_url": "https://github.com/q4osteam",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.q4os.org/",
@@ -294,7 +294,7 @@
     "official_website": "https://www.devuan.org/",
     "download_url": "https://www.devuan.org/get-devuan",
     "source_code_url": "https://git.devuan.org/",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.devuan.org/",
@@ -318,7 +318,7 @@
     "official_website": "https://www.slax.org/",
     "download_url": "https://www.slax.org/",
     "source_code_url": "https://github.com/Slax-Linux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.slax.org/",
@@ -342,7 +342,7 @@
     "official_website": "https://www.porteus.org/",
     "download_url": "https://www.porteus.org/download.html",
     "source_code_url": "https://github.com/Porteus-Linux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.porteus.org/",
@@ -365,7 +365,7 @@
     "official_website": "https://illumos.org/",
     "download_url": "https://illumos.org/docs/about/distro/",
     "source_code_url": "https://github.com/illumos/illumos-gate",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "CDDL and other component-specific licenses",
     "verification_sources": [
       "https://illumos.org/",
