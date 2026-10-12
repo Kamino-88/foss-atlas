@@ -15,7 +15,7 @@
     "official_website": "https://www.opensuse.org/",
     "download_url": "https://get.opensuse.org/tumbleweed/",
     "source_code_url": "https://github.com/openSUSE",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.opensuse.org/",
@@ -38,7 +38,7 @@
     "official_website": "https://www.opensuse.org/",
     "download_url": "https://get.opensuse.org/leap/",
     "source_code_url": "https://github.com/openSUSE",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.opensuse.org/",
@@ -61,7 +61,7 @@
     "official_website": "https://antixlinux.com/",
     "download_url": "https://antixlinux.com/download/",
     "source_code_url": "https://github.com/antix-linux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://antixlinux.com/",
@@ -85,7 +85,7 @@
     "official_website": "https://nixos.org/",
     "download_url": "https://nixos.org/download/",
     "source_code_url": "https://github.com/NixOS/nixpkgs",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://nixos.org/",
@@ -108,7 +108,7 @@
     "official_website": "https://www.clearlinux.org/",
     "download_url": "https://www.clearlinux.org/downloads.html",
     "source_code_url": "https://github.com/clearlinux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.clearlinux.org/",
@@ -130,7 +130,7 @@
     "official_website": "https://www.openmandriva.org/",
     "download_url": "https://www.openmandriva.org/en/download/",
     "source_code_url": "https://github.com/OpenMandrivaAssociation",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.openmandriva.org/",
@@ -153,7 +153,7 @@
     "official_website": "https://www.mageia.org/",
     "download_url": "https://www.mageia.org/en/downloads/",
     "source_code_url": "https://gitweb.mageia.org/",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.mageia.org/",
@@ -176,7 +176,7 @@
     "official_website": "https://trisquel.info/",
     "download_url": "https://trisquel.info/en/download",
     "source_code_url": "https://gitlab.trisquel.org/trisquel",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Free-software licenses; individual package licenses vary",
     "verification_sources": [
       "https://trisquel.info/",
@@ -199,7 +199,7 @@
     "official_website": "https://www.qubes-os.org/",
     "download_url": "https://www.qubes-os.org/downloads/",
     "source_code_url": "https://github.com/QubesOS",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "GPL-2.0 for the OS compilation; individual packages retain their own licenses",
     "verification_sources": [
       "https://www.qubes-os.org/",
