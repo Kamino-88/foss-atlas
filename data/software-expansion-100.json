@@ -139,15 +139,15 @@
     ],
     "official_website": "https://brlcad.org/",
     "download_url": "https://brlcad.org/wiki/Downloads",
-    "source_code_url": "https://github.com/BRL-CAD/brlcad",
+    "source_code_url": "https://github.com/brlcad/BRL-CAD",
     "alternative_to": [
       "AutoCAD"
     ],
-    "status": "Active",
+    "status": "Partially Verified",
     "logo_id": "brlcad",
     "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
-    "notes": "Corrected repository path capitalization after run #4: the canonical official repository is BRL-CAD/brlcad; the all-uppercase path returned HTTP 404 from the checker. Independent search confirms the repository and active source history."
+    "notes": "Canonical repository URL normalized to the exact GitHub path independently confirmed to render: https://github.com/brlcad/BRL-CAD. The prior path https://github.com/BRL-CAD/brlcad returned 404 from the automated runner due to path/redirect behavior; official BRL-CAD documentation still identifies the same source repository."
   },
   {
     "id": "kicad",
