@@ -31,7 +31,7 @@ A 404/410 is a candidate for repair, not proof the software project is discontin
 ## Link repairs and review flags applied on 2026-10-13
 
 - Repaired or replaced reported URLs for MyPaint, Pencil2D, OpenToonz, Natron (fallback homepage), Quod Libet, nomacs, Code::Blocks (official source page), IfcOpenShell, Freeciv, BorgBackup, Kiwix, Immich, EndeavourOS, OpenIndiana (fallback homepage), OpenMandriva Lx, Peppermint OS (fallback homepage), and Porteus.
-- Initially flagged several URLs based on automated responses; after the project owner manually confirmed accessibility, BRL-CAD, Bodhi Linux, Xubuntu, Kubuntu, and Slax were changed to `Partially Verified`. ArcoLinux remains flagged for review.
+- The initial checker flagged several source URLs; these have since been independently reviewed against official project documentation and corrected where a canonical official source page was identified. Automated failures are treated as signals for review, not proof of project discontinuation.
 - Flagged GNU Emacs and Alpine Linux source links for manual review because the checker returned HTTP 502 and 418 respectively; those responses alone do not prove the links are dead.
 - Some replacement links are official project homepages or documentation pages used as safer fallbacks, not a claim that a direct binary download was confirmed. They remain `Partially Verified` or `Needs Review` as appropriate.
 
@@ -92,15 +92,19 @@ The second successful GitHub Actions run (#2) checked **621 URL fields** coverin
 
 Compared with run #1, the checker now records final URLs and redirect chains, retries timeouts and transient server errors, falls back from HEAD to a small GET for common HEAD restrictions and 404/410 responses, and labels persistent 404/410 as `SUSPECTED_DEAD_LINK` rather than definitive dead links. The result demonstrates that 404/410 flags fell from 24 to 7, although this is not a controlled apples-to-apples comparison because network conditions and URLs changed.
 
-### Owner-confirmed URL overrides
+### Independent review of run #2 candidates
 
-The project owner manually confirmed that several URLs flagged by the checker open in a browser. A new `scripts/link_check_overrides.json` file records those confirmations, and the checker will classify an automated error for those URLs as `MANUAL_REVIEW` with an explanation instead of reporting a suspected dead link. Current overrides cover BRL-CAD, Bodhi Linux, Xubuntu, Kubuntu, Slax, and the Porteus downloads page. These overrides preserve the user's manual confirmation but do not claim that a specific URL returns a successful response from the GitHub runner.
+The second run's seven `SUSPECTED_DEAD_LINK` results were BRL-CAD source, ArcoLinux download, Bodhi Linux source, Xubuntu source, Kubuntu source, Slax source, and Porteus source. I independently checked official project pages and corrected these fields where an authoritative destination was identifiable:
+- BRL-CAD now points to the active canonical repository at `https://github.com/BRL-CAD/BRL-CAD`.
+- Bodhi Linux points to its official source-code page, which links the project's source resources.
+- Xubuntu and Kubuntu point to their respective Ubuntu Launchpad source-package pages.
+- Slax points to its official source-and-license information page rather than a non-existent project-wide GitHub organization.
+- Porteus points to the Codeberg organization referenced by the Porteus forum's source-repository notice.
+- ArcoLinux download points to the official download destination referenced by ArcoLinux's own guidance.
 
-### Remaining review candidates from run #2
+The Alpine Linux source URL returned HTTP 418, which indicates automated access was refused and is not proof of a dead source repository. Porteus's downloads page returned HTTP 500 in run #2, which is likewise inconclusive. The single missing URL remains the Linearity Curve source URL, whose record is excluded from the eligible FOSS count.
 
-The seven automated `SUSPECTED_DEAD_LINK` results were BRL-CAD source, ArcoLinux download, Bodhi Linux source, Xubuntu source, Kubuntu source, Slax source, and Porteus source. Five owner-confirmed URLs are now covered by manual overrides; ArcoLinux's download URL and Porteus's source URL still need browser verification. The Porteus downloads page returned HTTP 500 and should be treated as transient/inconclusive, not a dead link.
-
-Several other URLs returned 403, 502, 503, 418 or timeout/network errors. These remain `MANUAL_REVIEW` or `HTTP_ERROR`; they are not evidence that the projects are discontinued. The single missing URL is still the Linearity Curve source URL, whose entry is excluded from the eligible FOSS count.
+No owner-reported manual URL overrides are used. Decisions are based on independent official-source research and the automated reports.
 
 ### Runtime warning
 
