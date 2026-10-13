@@ -134,7 +134,7 @@
     "open_source": true,
     "free_to_use": true,
     "official_website": "https://www.openmandriva.org/",
-    "download_url": "https://www.openmandriva.org/en/download/",
+    "download_url": "https://www.openmandriva.org/downloads/",
     "source_code_url": "https://github.com/OpenMandrivaAssociation",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
@@ -142,7 +142,8 @@
       "https://www.openmandriva.org/",
       "https://github.com/OpenMandrivaAssociation"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "Corrected the old /en/download/ path to the current official downloads page."
   },
   {
     "id": "mageia",
