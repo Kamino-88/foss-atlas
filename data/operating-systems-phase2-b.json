@@ -64,13 +64,14 @@
     "official_website": "https://www.bodhilinux.com/",
     "download_url": "https://www.bodhilinux.com/download/",
     "source_code_url": "https://github.com/BodhiLinux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.bodhilinux.com/",
       "https://github.com/BodhiLinux"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "The source-code URL points to a GitHub organization page rather than a repository and returned 404 in the checker. A specific official source repository still needs to be identified."
   },
   {
     "id": "lubuntu",
@@ -112,13 +113,14 @@
     "official_website": "https://xubuntu.org/",
     "download_url": "https://xubuntu.org/download/",
     "source_code_url": "https://code.launchpad.net/xubuntu",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://xubuntu.org/",
       "https://code.launchpad.net/xubuntu"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "The listed Launchpad source-code URL returned 404. Needs manual confirmation of the current official source repository."
   },
   {
     "id": "ubuntu-mate",
@@ -160,13 +162,14 @@
     "official_website": "https://kubuntu.org/",
     "download_url": "https://kubuntu.org/getkubuntu/",
     "source_code_url": "https://code.launchpad.net/kubuntu",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://kubuntu.org/",
       "https://code.launchpad.net/kubuntu"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "The listed Launchpad source-code URL returned 404. Needs manual confirmation of the current official source repository."
   },
   {
     "id": "ubuntu-studio",
@@ -255,15 +258,16 @@
     "open_source": true,
     "free_to_use": true,
     "official_website": "https://peppermintos.com/",
-    "download_url": "https://peppermintos.com/installation/",
+    "download_url": "https://peppermintos.com/",
     "source_code_url": "https://github.com/peppermintos",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://peppermintos.com/",
       "https://github.com/peppermintos"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "The legacy installation path returned 404. Replaced with the official homepage while the current download/install route is checked manually."
   },
   {
     "id": "q4os",
@@ -331,13 +335,14 @@
     "official_website": "https://www.slax.org/",
     "download_url": "https://www.slax.org/",
     "source_code_url": "https://github.com/Slax-Linux",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.slax.org/",
       "https://github.com/Slax-Linux"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "The listed GitHub URL points to an organization rather than a repository and returned 404. Needs manual identification of the current official source repository."
   },
   {
     "id": "porteus",
@@ -354,7 +359,7 @@
     "open_source": true,
     "free_to_use": true,
     "official_website": "https://www.porteus.org/",
-    "download_url": "https://www.porteus.org/download.html",
+    "download_url": "https://www.porteus.org/downloads",
     "source_code_url": "https://github.com/Porteus-Linux",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
@@ -362,7 +367,8 @@
       "https://www.porteus.org/",
       "https://github.com/Porteus-Linux"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "Corrected the dead /download.html path to the current official /downloads page."
   },
   {
     "id": "illumos",
