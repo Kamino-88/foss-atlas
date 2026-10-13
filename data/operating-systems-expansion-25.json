@@ -414,8 +414,9 @@
     "documentation_url": "https://docs.alpinelinux.org/",
     "status": "Active",
     "logo_id": "alpine",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Needs Review",
+    "notes": "The source repository URL returned an unusual HTTP 418 response, which is not proof that it is dead. Keep for manual review."
   },
   {
     "id": "mxlinux",
@@ -587,8 +588,9 @@
     "documentation_url": "https://arcolinux.com/learning/",
     "status": "Active",
     "logo_id": "arcolinux",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Needs Review",
+    "notes": "The listed download page returned 404. Kept the official homepage as the fallback entry point; current project status and downloads need manual confirmation."
   },
   {
     "id": "endeavouros",
