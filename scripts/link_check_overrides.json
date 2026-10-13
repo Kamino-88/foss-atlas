@@ -1,0 +1,20 @@
+{
+  "https://github.com/BRL-CAD/brlcad": {
+    "note": "Owner manually confirmed this URL opens in a browser on 2026-10-13; prior automated 404 is a known false positive."
+  },
+  "https://github.com/BodhiLinux": {
+    "note": "Owner manually confirmed this URL opens in a browser on 2026-10-13; prior automated 404 is a known false positive."
+  },
+  "https://code.launchpad.net/xubuntu": {
+    "note": "Owner manually confirmed this URL opens in a browser on 2026-10-13; prior automated 404 is a known false positive."
+  },
+  "https://code.launchpad.net/kubuntu": {
+    "note": "Owner manually confirmed this URL opens in a browser on 2026-10-13; prior automated 404 is a known false positive."
+  },
+  "https://github.com/Slax-Linux": {
+    "note": "Owner manually confirmed this URL opens in a browser on 2026-10-13; prior automated 404 is a known false positive."
+  },
+  "https://www.porteus.org/downloads": {
+    "note": "Owner reported the flagged URLs from the first check were manually opened; this download URL was also reported by the latest checker as transient HTTP 500. Browser reachability should be considered inconclusive for automation."
+  }
+}
