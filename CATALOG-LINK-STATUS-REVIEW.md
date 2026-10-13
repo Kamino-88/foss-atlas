@@ -31,7 +31,7 @@ A 404/410 is a candidate for repair, not proof the software project is discontin
 ## Link repairs and review flags applied on 2026-10-13
 
 - Repaired or replaced reported URLs for MyPaint, Pencil2D, OpenToonz, Natron (fallback homepage), Quod Libet, nomacs, Code::Blocks (official source page), IfcOpenShell, Freeciv, BorgBackup, Kiwix, Immich, EndeavourOS, OpenIndiana (fallback homepage), OpenMandriva Lx, Peppermint OS (fallback homepage), and Porteus.
-- Marked source/download entries for BRL-CAD, ArcoLinux, Bodhi Linux, Xubuntu, Kubuntu, and Slax as `Needs Review` where the checker result did not establish a reliable canonical URL.
+- Initially flagged several URLs based on automated responses; after the project owner manually confirmed accessibility, BRL-CAD, Bodhi Linux, Xubuntu, Kubuntu, and Slax were changed to `Partially Verified`. ArcoLinux remains flagged for review.
 - Flagged GNU Emacs and Alpine Linux source links for manual review because the checker returned HTTP 502 and 418 respectively; those responses alone do not prove the links are dead.
 - Some replacement links are official project homepages or documentation pages used as safer fallbacks, not a claim that a direct binary download was confirmed. They remain `Partially Verified` or `Needs Review` as appropriate.
 
@@ -59,9 +59,22 @@ The workflow runs weekly on Mondays and can also be started manually from GitHub
 - `MISSING_URL`: a required URL field is empty.
 - `DATA_ERROR`: a source JSON file could not be parsed.
 
-The report reflects the initial run before these URL edits. Run the workflow again to measure the repaired URLs. The checker does not download/install applications and does not certify software safety.
+The initial report predates the URL edits. The checker now retries transient failures, falls back from HEAD to a small GET for common server restrictions and 404/410 responses, records redirect chains, reduces concurrency to limit rate-limiting, and labels persistent 404/410 results `SUSPECTED_DEAD_LINK` rather than definitive dead links. Access-denied responses, timeouts and persistent transient errors remain `MANUAL_REVIEW`. Run the workflow again to measure current reachability. The checker does not download/install applications and does not certify software safety.
 
 
 ## Manual link confirmation — 2026-10-13
 
 The project owner manually opened and confirmed that the following entries/URLs are accessible: **BRL-CAD, Bodhi Linux, Xubuntu, Kubuntu, and Slax**, along with other URLs reported by the first automated run. Their prior `Needs Review` labels caused solely by the automated HTTP result have been changed to `Partially Verified`, and the record notes now explain the discrepancy. These are user-reported manual checks, not an independently repeated automated test. Keep the checker report as a diagnostic and do not infer that an HTTP 404/403/timeout alone means a project or URL is discontinued.
+
+
+## Checker improvements — 2026-10-13
+
+The automated checker was updated to reduce false positives:
+- Retries timeouts and transient HTTP responses (408, 425, 429, and common 5xx responses) with a short backoff.
+- Uses a browser-like user agent and lower concurrency to reduce simplistic bot blocks and rate limits.
+- Falls back from HEAD to a small GET for common HEAD restrictions and for 404/410 responses.
+- Follows redirects and records the redirect chain and final URL.
+- Reports persistent 404/410 responses as `SUSPECTED_DEAD_LINK`, requiring manual confirmation before catalog changes.
+- Keeps access-denied, rate-limited, timeout and persistent transient/server failures as `MANUAL_REVIEW` when automated evidence is inconclusive.
+
+The updated checker has been committed, but a fresh GitHub Actions run is still needed to validate the new behavior against the full live catalog.
