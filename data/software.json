@@ -534,18 +534,19 @@
     "version": "2.x",
     "version_scheme": "major.minor",
     "official_website": "https://mypaint.app/",
-    "download_url": "https://mypaint.app/downloads/",
+    "download_url": "https://www.mypaint.app/en/",
     "source_code_url": "https://github.com/mypaint/mypaint",
     "alternative_to": [
       "Corel Painter"
     ],
     "status": "Active",
     "logo_id": "mypaint",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
     "verification_sources": [
       "official-project-pages"
-    ]
+    ],
+    "notes": "The former /downloads/ path returned 404 in the automated check. Replaced it with the official MyPaint website; current direct download route should be manually rechecked."
   },
   {
     "id": "pencil2d",
@@ -574,17 +575,18 @@
     "version_scheme": "minor",
     "official_website": "https://www.pencil2d.org/",
     "download_url": "https://www.pencil2d.org/download/",
-    "source_code_url": "https://github.com/pencil2d/pencil2d",
+    "source_code_url": "https://github.com/pencil2d/pencil",
     "alternative_to": [
       "Adobe Animate"
     ],
     "status": "Active",
     "logo_id": "pencil2d",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
     "verification_sources": [
       "official-project-pages"
-    ]
+    ],
+    "notes": "Corrected the source repository URL to the official Pencil2D repository; the previous pencil2d/pencil2d path returned 404."
   },
   {
     "id": "synfig",
@@ -649,18 +651,19 @@
     "version": "1.x",
     "version_scheme": "major.minor",
     "official_website": "https://opentoonz.github.io/e/",
-    "download_url": "https://opentoonz.github.io/e/download/",
+    "download_url": "https://opentoonz.github.io/e/",
     "source_code_url": "https://github.com/opentoonz/opentoonz",
     "alternative_to": [
       "Toon Boom Harmony"
     ],
     "status": "Active",
     "logo_id": "opentoonz",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
     "verification_sources": [
       "official-project-pages"
-    ]
+    ],
+    "notes": "The former download subpath returned 404. Pointing to the official OpenToonz homepage, which links to downloads."
   },
   {
     "id": "natron",
@@ -687,21 +690,21 @@
     "version": "2.x",
     "version_scheme": "major.minor",
     "official_website": "https://natrongithub.github.io/",
-    "download_url": "https://natrongithub.github.io/download.html",
+    "download_url": "https://natrongithub.github.io/",
     "source_code_url": "https://github.com/NatronGitHub/Natron",
     "alternative_to": [
       "Adobe After Effects"
     ],
     "status": "Maintenance",
     "logo_id": "natron",
-    "last_verified": "2026-08-18",
+    "last_verified": "2026-10-13",
     "verification_status": "Needs Review",
     "verification_sources": [
       "https://natrongithub.github.io/",
       "https://natrongithub.github.io/download.html",
       "https://github.com/NatronGitHub/Natron"
     ],
-    "notes": "Legacy project website and download page need a current release/link check before this entry can be marked verified. Do not infer discontinuation from the older website alone."
+    "notes": "The legacy download page returned 404. Linked to the project's legacy homepage instead; current download availability remains unverified."
   },
   {
     "id": "shotcut",
