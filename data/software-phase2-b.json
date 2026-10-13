@@ -326,7 +326,7 @@
       "iOS"
     ],
     "official_website": "https://immich.app/",
-    "download_url": "https://immich.app/docs/install/overview",
+    "download_url": "https://docs.immich.app/install/docker-compose/",
     "source_code_url": "https://github.com/immich-app/immich",
     "status": "Active",
     "verification_status": "Partially Verified",
@@ -334,7 +334,8 @@
       "https://immich.app/",
       "https://github.com/immich-app/immich"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "Replaced the obsolete install overview URL with the current official Docker Compose installation guide."
   },
   {
     "id": "jellyfin",
