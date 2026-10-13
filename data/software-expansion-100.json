@@ -147,7 +147,7 @@
     "logo_id": "brlcad",
     "last_verified": "2026-10-13",
     "verification_status": "Needs Review",
-    "notes": "The link checker reported the listed GitHub source repository as 404. Official website/download page remains listed; confirm the canonical source repository manually."
+    "notes": "The checker reported the listed GitHub source repository as 404. Confirm the canonical source repository manually."
   },
   {
     "id": "kicad",
@@ -2668,7 +2668,7 @@
     "logo_id": "borgbackup",
     "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
-    "notes": "The former install.html URL returned 404. The official BorgBackup homepage links to current installation instructions."
+    "notes": "The former install.html URL returned 404. The official homepage links to current installation instructions."
   },
   {
     "id": "syncthing-extra",
