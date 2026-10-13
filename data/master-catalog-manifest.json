@@ -2,7 +2,7 @@
   "catalog_name": "FOSS Atlas Master Catalog",
   "schema_version": "1.0",
   "catalog_version": "0.3",
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-13",
   "purpose": "Single source-of-truth manifest for the browser catalog while source datasets remain modular for GitHub Pages and Google Sites embedding.",
   "software_sources": [
     "software.json",
