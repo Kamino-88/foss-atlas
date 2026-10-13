@@ -71,7 +71,7 @@
       "https://github.com/BodhiLinux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The source-code URL points to a GitHub organization page rather than a repository and returned 404 in the checker. A specific official source repository still needs to be identified."
+    "notes": "The source URL points to a GitHub organization rather than a repository and returned 404. Identify the official source repository manually."
   },
   {
     "id": "lubuntu",
@@ -120,7 +120,7 @@
       "https://code.launchpad.net/xubuntu"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The listed Launchpad source-code URL returned 404. Needs manual confirmation of the current official source repository."
+    "notes": "The listed Launchpad source URL returned 404. Confirm the current official source repository manually."
   },
   {
     "id": "ubuntu-mate",
@@ -169,7 +169,7 @@
       "https://code.launchpad.net/kubuntu"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The listed Launchpad source-code URL returned 404. Needs manual confirmation of the current official source repository."
+    "notes": "The listed Launchpad source URL returned 404. Confirm the current official source repository manually."
   },
   {
     "id": "ubuntu-studio",
@@ -267,7 +267,7 @@
       "https://github.com/peppermintos"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The legacy installation path returned 404. Replaced with the official homepage while the current download/install route is checked manually."
+    "notes": "The legacy installation path returned 404. Official homepage retained while current download route is manually checked."
   },
   {
     "id": "q4os",
@@ -342,7 +342,7 @@
       "https://github.com/Slax-Linux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The listed GitHub URL points to an organization rather than a repository and returned 404. Needs manual identification of the current official source repository."
+    "notes": "The listed GitHub URL points to an organization rather than a repository and returned 404. Identify the official source repository manually."
   },
   {
     "id": "porteus",
@@ -368,7 +368,7 @@
       "https://github.com/Porteus-Linux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "Corrected the dead /download.html path to the current official /downloads page."
+    "notes": "Corrected the dead /download.html path to the official /downloads page; source-code organization URL remains under review."
   },
   {
     "id": "illumos",
