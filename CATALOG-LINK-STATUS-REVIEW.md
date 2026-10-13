@@ -128,3 +128,27 @@ The two suspected dead links were:
 The one HTTP error was Alpine Linux's source repository returning HTTP 418, which indicates the automated request was refused and does not establish that the source is dead. The one missing field is Linearity Curve's source URL; this item is excluded from the eligible FOSS count. The 23 manual-review results include access restrictions and network/server responses where automated checking cannot establish whether the URL is genuinely unavailable.
 
 These corrections were made using independent official-source research, not user-reported manual checks. A new workflow run is needed to confirm both corrected URLs from the runner.
+
+
+## Independent link-check run #5 — 2026-10-13
+
+The manually triggered **Catalog Link Check #5** completed successfully on commit `f8b6844f2796626e3f708e828e3b5087a31aa0a6`. The workflow itself succeeded; that means the checker completed, not that every catalog URL is valid.
+
+- URL-field checks: **621**
+- OK: **597**
+- Manual review: **20**
+- Suspected dead link: **2**
+- HTTP error: **1**
+- Missing URL: **1**
+
+Compared with run #4, the checker returned three more OK fields and three fewer manual-review fields. The two corrected URLs did **not** both pass: the runner still reports 404 for the BRL-CAD repository URL and ArcoLinux downloads page. Because GitHub and project sites may behave differently for automated clients, these are not automatically treated as proof that the projects themselves are unavailable.
+
+### Decisions after run #5
+
+- **BRL-CAD:** Keep the project listed, but treat its repository URL as unresolved until the exact canonical URL is confirmed from the project's own source documentation. A 404 from this runner alone is not enough to remove the project.
+- **ArcoLinux:** Mark as a legacy/archived entry rather than presenting it as an actively maintained distribution. Its downloads URL is unresolved; do not imply that a current ISO is available until the official project page is confirmed.
+- **Alpine Linux:** HTTP 418 remains inconclusive and is not counted as a dead link.
+- **Linearity Curve:** the source-code URL remains missing; this item is excluded from the eligible open-source count.
+- **Other manual-review results:** 403 access blocks, timeouts, DNS failures, and transient 5xx responses require separate official-source review; they do not by themselves prove a dead project.
+
+The run also displayed a GitHub Actions Node.js 20 deprecation warning. The check completed successfully, but the workflow's action/runtime compatibility should be reviewed separately before the announced runner transition.
