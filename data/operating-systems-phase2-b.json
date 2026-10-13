@@ -63,7 +63,7 @@
     "free_to_use": true,
     "official_website": "https://www.bodhilinux.com/",
     "download_url": "https://www.bodhilinux.com/download/",
-    "source_code_url": "https://github.com/BodhiLinux",
+    "source_code_url": "https://www.bodhilinux.com/w/source-code/",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
@@ -71,7 +71,7 @@
       "https://github.com/BodhiLinux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "User manually confirmed that the official website, download page, and listed source URL open properly. The automated checker had reported a 404 for the GitHub organization URL; treat that result as a false positive for reachability, not evidence of a dead project. Repository-level source mapping may still be improved separately."
+    "notes": "Uses the official Bodhi Linux source-code page, which links to upstream projects and the project's GitHub resources. A single project-wide repository is not assumed."
   },
   {
     "id": "lubuntu",
@@ -112,7 +112,7 @@
     "free_to_use": true,
     "official_website": "https://xubuntu.org/",
     "download_url": "https://xubuntu.org/download/",
-    "source_code_url": "https://code.launchpad.net/xubuntu",
+    "source_code_url": "https://launchpad.net/ubuntu/+source/xubuntu-meta",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
@@ -120,7 +120,7 @@
       "https://code.launchpad.net/xubuntu"
     ],
     "last_verified": "2026-10-13",
-    "notes": "User manually confirmed that the official website, download page, and listed Launchpad source URL open properly. The automated checker result appears to be a false positive or an access-dependent response; do not treat this URL as dead."
+    "notes": "Points to the official Ubuntu/Launchpad source package page for xubuntu-meta instead of the old team-code URL that returned 404 in automated checks."
   },
   {
     "id": "ubuntu-mate",
@@ -161,7 +161,7 @@
     "free_to_use": true,
     "official_website": "https://kubuntu.org/",
     "download_url": "https://kubuntu.org/getkubuntu/",
-    "source_code_url": "https://code.launchpad.net/kubuntu",
+    "source_code_url": "https://launchpad.net/ubuntu/+source/kubuntu-meta",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
@@ -169,7 +169,7 @@
       "https://code.launchpad.net/kubuntu"
     ],
     "last_verified": "2026-10-13",
-    "notes": "User manually confirmed that the official website, download page, and listed Launchpad source URL open properly. The automated checker result appears to be a false positive or an access-dependent response; do not treat this URL as dead."
+    "notes": "Points to the official Ubuntu/Launchpad source package page for kubuntu-meta instead of the old team-code URL that returned 404 in automated checks."
   },
   {
     "id": "ubuntu-studio",
@@ -334,7 +334,7 @@
     "free_to_use": true,
     "official_website": "https://www.slax.org/",
     "download_url": "https://www.slax.org/",
-    "source_code_url": "https://github.com/Slax-Linux",
+    "source_code_url": "https://www.slax.org/introduction.php",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
@@ -342,7 +342,7 @@
       "https://github.com/Slax-Linux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "User manually confirmed that the official website, download page, and listed source URL open properly. The automated checker had reported a 404 for the GitHub organization URL; treat this as a reachability false positive, not evidence of a dead project. Repository-level source mapping may still be improved separately."
+    "notes": "Uses the official Slax introduction/source-and-license page. Slax notes that it shares most code with Debian or Slackware, so this is more accurate than a non-existent project-wide GitHub organization URL."
   },
   {
     "id": "porteus",
@@ -360,7 +360,7 @@
     "free_to_use": true,
     "official_website": "https://www.porteus.org/",
     "download_url": "https://www.porteus.org/downloads",
-    "source_code_url": "https://github.com/Porteus-Linux",
+    "source_code_url": "https://codeberg.org/porteus",
     "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
@@ -368,7 +368,7 @@
       "https://github.com/Porteus-Linux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "Corrected the dead /download.html path to the official /downloads page; source-code organization URL remains under review."
+    "notes": "Updated to the Codeberg organization referenced by the Porteus forum's 2026 source-repository notice. Individual build-system and package-source repositories live under this organization."
   },
   {
     "id": "illumos",
