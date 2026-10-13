@@ -615,13 +615,14 @@
     "version_scheme": "rolling",
     "beginner_friendly": false,
     "official_website": "https://endeavouros.com/",
-    "download_url": "https://endeavouros.com/latest-release/",
+    "download_url": "https://endeavouros.com/download/",
     "source_code_url": "https://github.com/endeavouros-team",
     "documentation_url": "https://discovery.endeavouros.com/",
     "status": "Active",
     "logo_id": "endeavouros",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Partially Verified",
+    "notes": "Corrected the old latest-release path to the official download page."
   },
   {
     "id": "artix",
@@ -798,13 +799,14 @@
     "version_scheme": "release-based",
     "beginner_friendly": false,
     "official_website": "https://www.openindiana.org/",
-    "download_url": "https://www.openindiana.org/download/",
+    "download_url": "https://www.openindiana.org/",
     "source_code_url": "https://github.com/OpenIndiana",
     "documentation_url": "https://docs.openindiana.org/",
     "status": "Active",
     "logo_id": "openindiana",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Needs Review",
+    "notes": "The listed download path returned 404. Replaced with the official project homepage; locate and verify its current download destination manually."
   },
   {
     "id": "reactos",
