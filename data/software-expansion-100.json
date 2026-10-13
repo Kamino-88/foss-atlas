@@ -146,8 +146,8 @@
     "status": "Active",
     "logo_id": "brlcad",
     "last_verified": "2026-10-13",
-    "verification_status": "Needs Review",
-    "notes": "The checker reported the listed GitHub source repository as 404. Confirm the canonical source repository manually."
+    "verification_status": "Partially Verified",
+    "notes": "User manually confirmed that the official website, download page, and listed source URL open properly. The automated checker had returned 404 for the source URL; this appears to be a checker false positive or an intermittent/access-dependent response. URL reachability was manually confirmed; project metadata and releases are not fully re-audited."
   },
   {
     "id": "kicad",
