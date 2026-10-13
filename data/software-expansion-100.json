@@ -145,8 +145,9 @@
     ],
     "status": "Active",
     "logo_id": "brlcad",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Needs Review",
+    "notes": "The link checker reported the listed GitHub source repository as 404. Official website/download page remains listed; confirm the canonical source repository manually."
   },
   {
     "id": "kicad",
@@ -1626,15 +1627,16 @@
       "Linux"
     ],
     "official_website": "https://quodlibet.readthedocs.io/",
-    "download_url": "https://quodlibet.readthedocs.io/en/latest/download.html",
+    "download_url": "https://quodlibet.readthedocs.io/en/latest/downloads.html",
     "source_code_url": "https://github.com/quodlibet/quodlibet",
     "alternative_to": [
       "iTunes"
     ],
     "status": "Active",
     "logo_id": "quodlibet",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Partially Verified",
+    "notes": "Corrected the old /download.html path to the official documentation's /downloads.html page."
   },
   {
     "id": "digikam",
@@ -1686,15 +1688,16 @@
       "Linux"
     ],
     "official_website": "https://nomacs.org/",
-    "download_url": "https://nomacs.org/download/",
+    "download_url": "https://nomacs.org/docs/getting-started/installation/",
     "source_code_url": "https://github.com/nomacs/nomacs",
     "alternative_to": [
       "IrfanView"
     ],
     "status": "Active",
     "logo_id": "nomacs",
-    "last_verified": "2026-08-18",
-    "verification_status": "Partially Verified"
+    "last_verified": "2026-10-13",
+    "verification_status": "Partially Verified",
+    "notes": "Replaced the dead download path with the official nomacs installation guide."
   },
   {
     "id": "filelight",
@@ -1776,15 +1779,15 @@
     ],
     "official_website": "https://www.codeblocks.org/",
     "download_url": "https://www.codeblocks.org/downloads/",
-    "source_code_url": "https://sourceforge.net/p/codeblocks/code/HEAD/tree/",
+    "source_code_url": "https://www.codeblocks.org/downloads/source/",
     "alternative_to": [
       "Microsoft Visual Studio"
     ],
     "status": "Active",
     "logo_id": "codeblocks",
     "last_verified": "2026-10-13",
-    "verification_status": "Needs Review",
-    "notes": "The previously listed GitHub repository was not found. Replaced with the Code::Blocks SourceForge code browser; verify repository status manually."
+    "verification_status": "Partially Verified",
+    "notes": "Replaced a non-existent GitHub repository with the official Code::Blocks source-code page."
   },
   {
     "id": "tesseract",
@@ -2665,7 +2668,7 @@
     "logo_id": "borgbackup",
     "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
-    "notes": "The former install.html URL returned 404. The official BorgBackup homepage links to current installation instructions and downloads."
+    "notes": "The former install.html URL returned 404. The official BorgBackup homepage links to current installation instructions."
   },
   {
     "id": "syncthing-extra",
