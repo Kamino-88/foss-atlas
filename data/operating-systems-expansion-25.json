@@ -586,11 +586,11 @@
     "download_url": "https://www.arcolinux.info/downloads/",
     "source_code_url": "https://github.com/arcolinux",
     "documentation_url": "https://arcolinux.com/learning/",
-    "status": "Active",
+    "status": "Archived",
     "logo_id": "arcolinux",
     "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
-    "notes": "Corrected to the official ArcoLinux Downloads page. The previous /download/ path returned HTTP 404; the official page is indexed as /downloads/ and provides current ISO options."
+    "notes": "Official site still indexes this Downloads page, but independent project news describes a farewell to ArcoLinux and a final personal ISO called Kiro. The automated runner receives 404 while web indexing still shows the page, so link availability is inconsistent. Keep this as a legacy/archived entry and recheck the official page before recommending downloads; do not silently substitute Kiro for ArcoLinux."
   },
   {
     "id": "endeavouros",
