@@ -109,3 +109,22 @@ No owner-reported manual URL overrides are used. Decisions are based on independ
 ### Runtime warning
 
 The workflow actions were upgraded from checkout v4, setup-python v5 and upload-artifact v4 to their newer major versions to address the Node.js 20 deprecation warning shown in the run summary. The next GitHub Actions run must confirm those versions execute successfully on the runner.
+
+
+## Independent link-check run #4 — 2026-10-13
+
+The project owner ran Catalog Link Check #4 successfully. I retrieved and inspected its uploaded JSON report directly. It contains **621 URL-field checks** across **575 unique URLs**:
+
+- **594 OK**
+- **23 MANUAL_REVIEW**
+- **2 SUSPECTED_DEAD_LINK**
+- **1 HTTP_ERROR**
+- **1 MISSING_URL**
+
+The two suspected dead links were:
+1. **BRL-CAD source:** `https://github.com/BRL-CAD/BRL-CAD` returned 404. Independent search confirmed the canonical active repository uses the path `https://github.com/BRL-CAD/brlcad`; the catalog has been corrected to that URL.
+2. **ArcoLinux download:** `https://arcolinux.info/download/` returned 404. Independent search identified the official Downloads page at `https://www.arcolinux.info/downloads/`; the catalog has been corrected to that URL.
+
+The one HTTP error was Alpine Linux's source repository returning HTTP 418, which indicates the automated request was refused and does not establish that the source is dead. The one missing field is Linearity Curve's source URL; this item is excluded from the eligible FOSS count. The 23 manual-review results include access restrictions and network/server responses where automated checking cannot establish whether the URL is genuinely unavailable.
+
+These corrections were made using independent official-source research, not user-reported manual checks. A new workflow run is needed to confirm both corrected URLs from the runner.
