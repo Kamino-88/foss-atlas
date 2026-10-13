@@ -127,11 +127,12 @@
     ],
     "logo_id": "emacs",
     "last_verified": "2026-10-12",
-    "verification_status": "Partially Verified",
+    "verification_status": "Needs Review",
     "verification_sources": [
       "https://www.gnu.org/software/emacs/",
       "https://git.savannah.gnu.org/cgit/emacs.git"
-    ]
+    ],
+    "notes": "Savannah source URL returned HTTP 502 during the check, which may be transient. Kept for manual review rather than treating it as dead."
   },
   {
     "id": "gitlab-ce",
