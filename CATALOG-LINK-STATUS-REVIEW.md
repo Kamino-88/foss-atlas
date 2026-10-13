@@ -78,3 +78,30 @@ The automated checker was updated to reduce false positives:
 - Keeps access-denied, rate-limited, timeout and persistent transient/server failures as `MANUAL_REVIEW` when automated evidence is inconclusive.
 
 The updated checker has been committed, but a fresh GitHub Actions run is still needed to validate the new behavior against the full live catalog.
+
+
+## Second automated run and checker refinements — 2026-10-13
+
+The second successful GitHub Actions run (#2) checked **621 URL fields** covering **575 unique URLs**. Its initial results, before the new owner-confirmation override file was added, were:
+
+- **589 OK**
+- **23 MANUAL_REVIEW**
+- **7 SUSPECTED_DEAD_LINK**
+- **1 HTTP_ERROR**
+- **1 MISSING_URL**
+
+Compared with run #1, the checker now records final URLs and redirect chains, retries timeouts and transient server errors, falls back from HEAD to a small GET for common HEAD restrictions and 404/410 responses, and labels persistent 404/410 as `SUSPECTED_DEAD_LINK` rather than definitive dead links. The result demonstrates that 404/410 flags fell from 24 to 7, although this is not a controlled apples-to-apples comparison because network conditions and URLs changed.
+
+### Owner-confirmed URL overrides
+
+The project owner manually confirmed that several URLs flagged by the checker open in a browser. A new `scripts/link_check_overrides.json` file records those confirmations, and the checker will classify an automated error for those URLs as `MANUAL_REVIEW` with an explanation instead of reporting a suspected dead link. Current overrides cover BRL-CAD, Bodhi Linux, Xubuntu, Kubuntu, Slax, and the Porteus downloads page. These overrides preserve the user's manual confirmation but do not claim that a specific URL returns a successful response from the GitHub runner.
+
+### Remaining review candidates from run #2
+
+The seven automated `SUSPECTED_DEAD_LINK` results were BRL-CAD source, ArcoLinux download, Bodhi Linux source, Xubuntu source, Kubuntu source, Slax source, and Porteus source. Five owner-confirmed URLs are now covered by manual overrides; ArcoLinux's download URL and Porteus's source URL still need browser verification. The Porteus downloads page returned HTTP 500 and should be treated as transient/inconclusive, not a dead link.
+
+Several other URLs returned 403, 502, 503, 418 or timeout/network errors. These remain `MANUAL_REVIEW` or `HTTP_ERROR`; they are not evidence that the projects are discontinued. The single missing URL is still the Linearity Curve source URL, whose entry is excluded from the eligible FOSS count.
+
+### Runtime warning
+
+The workflow actions were upgraded from checkout v4, setup-python v5 and upload-artifact v4 to their newer major versions to address the Node.js 20 deprecation warning shown in the run summary. The next GitHub Actions run must confirm those versions execute successfully on the runner.
