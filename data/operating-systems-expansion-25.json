@@ -415,8 +415,8 @@
     "status": "Active",
     "logo_id": "alpine",
     "last_verified": "2026-10-13",
-    "verification_status": "Needs Review",
-    "notes": "The source repository returned HTTP 418, which is not proof that it is dead; retained for manual review."
+    "verification_status": "Partially Verified",
+    "notes": "The official Alpine aports GitLab URL returned HTTP 418 to the automated checker. This is an access-policy response, not evidence the source repository is dead; source URL retained."
   },
   {
     "id": "mxlinux",
@@ -583,14 +583,14 @@
     "version_scheme": "rolling",
     "beginner_friendly": false,
     "official_website": "https://arcolinux.com/",
-    "download_url": "https://arcolinux.com/download/",
+    "download_url": "https://arcolinux.info/download/",
     "source_code_url": "https://github.com/arcolinux",
     "documentation_url": "https://arcolinux.com/learning/",
     "status": "Active",
     "logo_id": "arcolinux",
     "last_verified": "2026-10-13",
-    "verification_status": "Needs Review",
-    "notes": "The listed download page returned 404. Official homepage retained as fallback; current project status and downloads need manual confirmation."
+    "verification_status": "Partially Verified",
+    "notes": "Replaced the reported 404 path with the official ArcoLinux download destination referenced by its own download/integrity guidance. Recheck periodically because project download routing can change."
   },
   {
     "id": "endeavouros",
