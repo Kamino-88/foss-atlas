@@ -1,8 +1,8 @@
 # FOSS Atlas — Phase 2 Catalog Audit
 
-Audit date: 2026-10-12  
+Audit date: 2026-10-13  
 Catalog version: 0.3  
-Scope: all eight JSON datasets loaded by `app.js`. This combines structural counts with a targeted official-source review; it is not yet a full HTTP check of every URL.
+Scope: all eight JSON datasets loaded by `app.js`. This combines structural counts, targeted official-source review, and the first automated HTTP link-check run.
 
 ## Executive result
 
@@ -11,11 +11,11 @@ Scope: all eight JSON datasets loaded by `app.js`. This combines structural coun
 | Raw records across loaded source files | 148 | 59 |
 | Distinct IDs | 148 | 59 |
 | Distinct normalized names | 148 | 59 |
-| Unique open-source and free-to-use software / OS entries under current engine rules | **147** | **59** |
+| Unique open-source and free-to-use entries under current engine rules | **147** | **59** |
 | Phase 2 target | 250 | 50 |
 | Current target gap / surplus | **103 short** | **9 above target** |
 
-The project owner previously confirmed that the website displayed 148 software projects and 59 operating systems before this cleanup. Removing the separate FreeCAD Path Workbench entry changes the raw software count to 148 and eligible count to 147. The OS total still needs an editorial check to distinguish independent projects from editions and flavors.
+The OS total still needs an editorial check to distinguish independent projects from editions and flavors.
 
 ## Source datasets and row counts
 
@@ -29,7 +29,7 @@ The project owner previously confirmed that the website displayed 148 software p
 | `data/software-phase2-b.json` | 17 |
 | **Total** | **148** |
 
-The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve (`vectornator`) remains marked `open_source: false` and excluded from the eligible count. One non-standalone listing, FreeCAD Path Workbench, was removed because it is a built-in FreeCAD workbench (called CAM Workbench in current FreeCAD documentation), not a separate software project.
+The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve (`vectornator`) remains marked `open_source: false` and excluded from the eligible count. FreeCAD Path Workbench was removed because it is part of FreeCAD, not a separate software project.
 
 ### Operating systems
 
@@ -41,38 +41,33 @@ The engine requires `open_source: true` and `free_to_use: true`. Linearity Curve
 | `data/operating-systems-phase2-b.json` | 16 |
 | **Total** | **59** |
 
-## Targeted status and link review — 2026-10-12
+## Targeted status review
 
-- **Stacer:** marked `Archived`. Its official GitHub README explicitly says the project has been abandoned and there will be no further releases. [Official repository](https://github.com/oguzhaninan/Stacer).
-- **Valkey:** renamed the record ID from `redis` to `valkey`, added a Valkey logo mapping, and retained the BSD-3-Clause license. The official repository identifies Valkey as a distinct Redis-compatible project and lists BSD-3-Clause. [Valkey repository](https://github.com/valkey-io/valkey).
-- **Apache OpenOffice:** retained status `Maintenance`. The official project blog reported on 26 September 2026 that 4.1.17 was in preparation and described further development towards a future major release. [Official development update](https://openoffice.apache.org/blog/what-is-going-on-in-Apache-OpenOffice-development.html).
-- **Dia:** updated its download link to the GNOME source release directory referenced by the archived GNOME download page. The GNOME wiki warns that its version information may be outdated, so current binary availability still needs confirmation. [Archived download page](https://wiki.gnome.org/Apps/Dia/Download).
-- **Natron:** retained status `Maintenance`, but marked `Needs Review` because its legacy website and download page require a current release/link check. It has not been labelled discontinued without sufficient evidence.
-- **FreeCAD Path Workbench:** removed as a separate catalog item because current FreeCAD documentation describes CAM as a workbench inside FreeCAD. [Official FreeCAD documentation](https://github.com/FreeCAD/FreeCAD-documentation-docusaurus/blob/Stable/docs/workbenches/path.md).
+- **Stacer:** marked `Archived` because the [official repository](https://github.com/oguzhaninan/Stacer) explicitly says it is abandoned.
+- **Valkey:** corrected the record ID to `valkey`, added logo mapping, and retained BSD-3-Clause licensing. [Official repository](https://github.com/valkey-io/valkey).
+- **Apache OpenOffice:** retained `Maintenance`; the [official development update](https://openoffice.apache.org/blog/what-is-going-on-in-Apache-OpenOffice-development.html) dated 26 September 2026 says 4.1.17 is in preparation.
+- **Dia:** changed download URL to the GNOME source release directory; binary availability remains to be checked. [Archived download page](https://wiki.gnome.org/Apps/Dia/Download).
+- **Natron:** marked `Needs Review`; not labelled discontinued without evidence.
 - **Clear Linux OS:** already marked `Discontinued` / `Archived` based on Intel's archived project repository.
-- **Linearity Curve:** remains excluded from the FOSS count because it is marked non-open-source and lacks a source-code URL.
+- **Linearity Curve:** excluded from the FOSS count because it is marked non-open-source and lacks a source-code URL.
 
-## What is and is not verified
+## Automated link-check results and follow-up
 
-The targeted status decisions above are based on the official project sources linked in this report. **Not every download/source URL in all 207 remaining catalog records has been independently requested and tested.** A browser-visible page, a source repository, and a working downloadable binary are separate checks. To avoid false assurances, unresolved links remain flagged rather than being assigned a successful verification date.
+Workflow: [Catalog Link Check](https://github.com/Kamino-88/foss-atlas/actions/workflows/catalog-link-check.yml). Checker: [scripts/check_catalog_links.py](https://github.com/Kamino-88/foss-atlas/blob/main/scripts/check_catalog_links.py).
 
-A weekly automated link-check workflow is now available at [GitHub Actions](https://github.com/Kamino-88/foss-atlas/actions/workflows/catalog-link-check.yml). It tests official website, download and source URLs, records HTTP status/errors, and preserves CSV/JSON report artifacts for 90 days. HTTP errors such as 403/429 are treated as “needs manual review”, not automatically as dead links. The first workflow run has not yet been executed by this edit.
+The first successful run on 2026-10-12 checked **621 URL fields** and returned 571 `OK`, 24 `DEAD_LINK` (404/410), 22 `MANUAL_REVIEW`, 3 `HTTP_ERROR`, and 1 `MISSING_URL`. The missing source URL was on Linearity Curve, which is excluded from eligible FOSS count. Blocked or timed-out URLs are not automatically considered dead.
 
-## Duplicate cleanup
+On 2026-10-13, official/fallback URLs were updated for MyPaint, Pencil2D, OpenToonz, Natron (homepage fallback), Quod Libet, nomacs, Code::Blocks, IfcOpenShell, Freeciv, BorgBackup, Kiwix, Immich, EndeavourOS, OpenIndiana (homepage fallback), OpenMandriva Lx, Peppermint OS (homepage fallback), and Porteus. Several ambiguous source links were marked `Needs Review` rather than guessing a canonical repository. GNU Emacs and Alpine Linux source URLs were flagged for manual review due to non-404 HTTP errors.
 
-- Earlier exact-match cleanup removed 41 software rows and 13 OS rows.
-- Phase 2C duplicate review consolidated 11 more software rows and 13 more OS rows.
-- Total removed across those duplicate passes: **52 software rows and 26 OS rows**.
-- A further separate non-project entry (FreeCAD Path Workbench) was removed in this review.
-- Canonical IDs and the list of duplicate merges are documented in [`CATALOG-DUPLICATE-REVIEW.md`](https://github.com/Kamino-88/foss-atlas/blob/main/CATALOG-DUPLICATE-REVIEW.md).
+**Important:** the 621-check report predates these edits. Run the workflow again to measure the repaired links. A reachable homepage is not proof that a current installer exists; entries remain partially verified or flagged until checked to the full editorial standard.
 
 ## Remaining work
 
-1. Run the new automated link-check workflow and fix genuine 404/410 or invalid redirects.
-2. Manually inspect blocked, rate-limited, JavaScript-only and mirror links.
-3. Review the 59 OS entries to distinguish independent projects from editions and flavors.
+1. Rerun the automated link-check workflow and review the new report.
+2. Manually inspect blocked, rate-limited, JavaScript-only, mirror, and ambiguous source links.
+3. Review 59 OS records to distinguish independent projects from editions/flavors.
 4. Add at least 103 eligible unique software projects to reach the 250-project target.
-5. Recheck current release/version licensing before upgrading any entry to `Verified`.
+5. Recheck current release/version and licensing before marking any entry `Verified`.
 
 ## Verification policy
 
@@ -80,9 +75,9 @@ A weekly automated link-check workflow is now available at [GitHub Actions](http
 - Normalized project name and official website URL are used for duplicate review.
 - Shared website hostnames alone are not sufficient to merge records.
 - `Verified`: required fields and official sources checked to the catalog's full editorial standard.
-- `Partially Verified`: identity and selected metadata/source links reviewed, but some fields or bundled-component details remain unchecked.
+- `Partially Verified`: identity and selected metadata/source links reviewed, but some fields remain unchecked.
 - `Needs Review`: record requires source verification.
-- `Archived`: project is no longer maintained and is shown only if the directory retains discontinued projects.
+- `Archived`: project is no longer maintained and is retained only if the directory includes discontinued projects.
 
 ## Logo policy
 
