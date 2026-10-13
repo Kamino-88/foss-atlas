@@ -269,7 +269,7 @@
       "iOS"
     ],
     "official_website": "https://kiwix.org/",
-    "download_url": "https://kiwix.org/en/downloads/",
+    "download_url": "https://hub.kiwix.org/downloads/",
     "source_code_url": "https://github.com/kiwix/kiwix-desktop",
     "status": "Active",
     "verification_status": "Partially Verified",
@@ -277,6 +277,7 @@
       "https://kiwix.org/",
       "https://github.com/kiwix/kiwix-desktop"
     ],
-    "last_verified": "2026-10-12"
+    "last_verified": "2026-10-13",
+    "notes": "Replaced the dead legacy download URL with the current Kiwix Hub downloads page."
   }
 ]
