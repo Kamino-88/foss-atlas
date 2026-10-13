@@ -64,14 +64,14 @@
     "official_website": "https://www.bodhilinux.com/",
     "download_url": "https://www.bodhilinux.com/download/",
     "source_code_url": "https://github.com/BodhiLinux",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.bodhilinux.com/",
       "https://github.com/BodhiLinux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The source URL points to a GitHub organization rather than a repository and returned 404. Identify the official source repository manually."
+    "notes": "User manually confirmed that the official website, download page, and listed source URL open properly. The automated checker had reported a 404 for the GitHub organization URL; treat that result as a false positive for reachability, not evidence of a dead project. Repository-level source mapping may still be improved separately."
   },
   {
     "id": "lubuntu",
@@ -113,14 +113,14 @@
     "official_website": "https://xubuntu.org/",
     "download_url": "https://xubuntu.org/download/",
     "source_code_url": "https://code.launchpad.net/xubuntu",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://xubuntu.org/",
       "https://code.launchpad.net/xubuntu"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The listed Launchpad source URL returned 404. Confirm the current official source repository manually."
+    "notes": "User manually confirmed that the official website, download page, and listed Launchpad source URL open properly. The automated checker result appears to be a false positive or an access-dependent response; do not treat this URL as dead."
   },
   {
     "id": "ubuntu-mate",
@@ -162,14 +162,14 @@
     "official_website": "https://kubuntu.org/",
     "download_url": "https://kubuntu.org/getkubuntu/",
     "source_code_url": "https://code.launchpad.net/kubuntu",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://kubuntu.org/",
       "https://code.launchpad.net/kubuntu"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The listed Launchpad source URL returned 404. Confirm the current official source repository manually."
+    "notes": "User manually confirmed that the official website, download page, and listed Launchpad source URL open properly. The automated checker result appears to be a false positive or an access-dependent response; do not treat this URL as dead."
   },
   {
     "id": "ubuntu-studio",
@@ -335,14 +335,14 @@
     "official_website": "https://www.slax.org/",
     "download_url": "https://www.slax.org/",
     "source_code_url": "https://github.com/Slax-Linux",
-    "verification_status": "Needs Review",
+    "verification_status": "Partially Verified",
     "license": "Mixed open-source licenses; package-specific",
     "verification_sources": [
       "https://www.slax.org/",
       "https://github.com/Slax-Linux"
     ],
     "last_verified": "2026-10-13",
-    "notes": "The listed GitHub URL points to an organization rather than a repository and returned 404. Identify the official source repository manually."
+    "notes": "User manually confirmed that the official website, download page, and listed source URL open properly. The automated checker had reported a 404 for the GitHub organization URL; treat this as a reachability false positive, not evidence of a dead project. Repository-level source mapping may still be improved separately."
   },
   {
     "id": "porteus",
