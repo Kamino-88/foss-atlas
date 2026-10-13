@@ -34,7 +34,6 @@ URL_FIELDS = ("official_website", "download_url", "source_code_url")
 TIMEOUT = 15
 MAX_WORKERS = 8
 RETRIES = 2
-OVERRIDES_FILE = ROOT / "scripts" / "link_check_overrides.json"
 RETRYABLE_STATUS = {408, 425, 429, 500, 502, 503, 504}
 HEAD_GET_FALLBACK = {400, 403, 404, 405, 406, 409, 410, 429, 501}
 MANUAL_REVIEW_STATUS = {401, 403, 407, 429}
@@ -161,12 +160,6 @@ def check_url(url: str) -> dict:
 
 def main() -> None:
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-    try:
-        overrides = json.loads(OVERRIDES_FILE.read_text(encoding="utf-8"))
-    except FileNotFoundError:
-        overrides = {}
-    except Exception as exc:
-        raise RuntimeError(f"Could not read {OVERRIDES_FILE}: {exc}") from exc
     rows = []
     pending = []
     for file_name in DATA_FILES:
@@ -225,14 +218,6 @@ def main() -> None:
 
     for item in pending:
         result = dict(checked[item["url"]])
-        override = overrides.get(item["url"])
-        if override and result.get("result") in ("SUSPECTED_DEAD_LINK", "HTTP_ERROR", "MANUAL_REVIEW"):
-            result["result"] = "MANUAL_REVIEW"
-            result["detail"] = (
-                "Known manual-confirmation override: "
-                + str(override.get("note", "Owner reported this URL opens in a browser"))
-                + "; automated result is inconclusive and must not be treated as a dead link"
-            )
         result["redirect_chain"] = json.dumps(result.get("redirect_chain", []), ensure_ascii=False)
         rows.append({**item, **result})
 
@@ -267,8 +252,7 @@ def main() -> None:
             "max_workers": MAX_WORKERS,
             "redirect_chain_recorded": True,
             "suspected_dead_link_policy": "404/410 remains SUSPECTED_DEAD_LINK after fallback/retries; manually confirm before editing catalog",
-            "manual_review_policy": "Access-denied, rate-limited, timeout, persistent transient/server errors, and manually confirmed override URLs are inconclusive",
-            "manual_confirmation_overrides": len(overrides),
+            "manual_review_policy": "Access-denied, rate-limited, timeout, and persistent transient/server errors are inconclusive",
         },
     }
     json_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
