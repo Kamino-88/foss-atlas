@@ -546,7 +546,7 @@
     "verification_sources": [
       "official-project-pages"
     ],
-    "notes": "The former /downloads/ path returned 404 in the automated check. Replaced it with the official MyPaint website; current direct download route should be manually rechecked."
+    "notes": "The former /downloads/ path returned 404. Replaced with the official MyPaint website; current direct download route should be manually rechecked."
   },
   {
     "id": "pencil2d",
@@ -586,7 +586,7 @@
     "verification_sources": [
       "official-project-pages"
     ],
-    "notes": "Corrected the source repository URL to the official Pencil2D repository; the previous pencil2d/pencil2d path returned 404."
+    "notes": "Corrected the source repository URL to the official Pencil2D repository; the previous path returned 404."
   },
   {
     "id": "synfig",
@@ -663,7 +663,7 @@
     "verification_sources": [
       "official-project-pages"
     ],
-    "notes": "The former download subpath returned 404. Pointing to the official OpenToonz homepage, which links to downloads."
+    "notes": "The former download subpath returned 404. Pointing to the official homepage, which links to downloads."
   },
   {
     "id": "natron",
@@ -704,7 +704,7 @@
       "https://natrongithub.github.io/download.html",
       "https://github.com/NatronGitHub/Natron"
     ],
-    "notes": "The legacy download page returned 404. Linked to the project's legacy homepage instead; current download availability remains unverified."
+    "notes": "The legacy download page returned 404. Linked to the legacy homepage; current download availability remains unverified."
   },
   {
     "id": "shotcut",
