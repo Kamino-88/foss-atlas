@@ -45,16 +45,13 @@ USER_AGENT = (
 
 class TrackingRedirectHandler(urllib.request.HTTPRedirectHandler):
     """Follow redirects and preserve their chain for the report."""
+    def __init__(self, chain):
+        super().__init__()
+        self.chain = chain
+
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        chain = list(getattr(req, "_foss_redirect_chain", []))
-        chain.append({"status": code, "url": newurl})
-        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
-        if redirected is not None:
-            redirected._foss_redirect_chain = chain
-        return redirected
-
-
-OPENER = urllib.request.build_opener(TrackingRedirectHandler())
+        self.chain.append({"status": code, "url": newurl})
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
 def _request(url: str, method: str):
@@ -68,8 +65,9 @@ def _request(url: str, method: str):
         # Range, but the response body is never read or saved.
         headers["Range"] = "bytes=0-0"
     req = urllib.request.Request(url, method=method, headers=headers)
-    with OPENER.open(req, timeout=TIMEOUT) as response:
-        chain = list(getattr(response, "_foss_redirect_chain", []))
+    chain = []
+    opener = urllib.request.build_opener(TrackingRedirectHandler(chain))
+    with opener.open(req, timeout=TIMEOUT) as response:
         return {
             "http_status": response.getcode(),
             "final_url": response.geturl(),
@@ -87,11 +85,10 @@ def _request_with_retries(url: str, method: str):
                 return result
             last = result
         except urllib.error.HTTPError as exc:
-            chain = list(getattr(exc, "_foss_redirect_chain", []))
             last = {
                 "http_status": exc.code,
                 "final_url": exc.geturl(),
-                "redirect_chain": chain,
+                "redirect_chain": [],
                 "detail": str(exc),
             }
             if exc.code not in RETRYABLE_STATUS or attempt == RETRIES:
