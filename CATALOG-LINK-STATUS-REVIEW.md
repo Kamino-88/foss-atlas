@@ -60,3 +60,8 @@ The workflow runs weekly on Mondays and can also be started manually from GitHub
 - `DATA_ERROR`: a source JSON file could not be parsed.
 
 The report reflects the initial run before these URL edits. Run the workflow again to measure the repaired URLs. The checker does not download/install applications and does not certify software safety.
+
+
+## Manual link confirmation — 2026-10-13
+
+The project owner manually opened and confirmed that the following entries/URLs are accessible: **BRL-CAD, Bodhi Linux, Xubuntu, Kubuntu, and Slax**, along with other URLs reported by the first automated run. Their prior `Needs Review` labels caused solely by the automated HTTP result have been changed to `Partially Verified`, and the record notes now explain the discrepancy. These are user-reported manual checks, not an independently repeated automated test. Keep the checker report as a diagnostic and do not infer that an HTTP 404/403/timeout alone means a project or URL is discontinued.
