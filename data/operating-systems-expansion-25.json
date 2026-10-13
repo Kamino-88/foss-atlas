@@ -583,14 +583,14 @@
     "version_scheme": "rolling",
     "beginner_friendly": false,
     "official_website": "https://arcolinux.com/",
-    "download_url": "https://arcolinux.info/download/",
+    "download_url": "https://www.arcolinux.info/downloads/",
     "source_code_url": "https://github.com/arcolinux",
     "documentation_url": "https://arcolinux.com/learning/",
     "status": "Active",
     "logo_id": "arcolinux",
     "last_verified": "2026-10-13",
     "verification_status": "Partially Verified",
-    "notes": "Replaced the reported 404 path with the official ArcoLinux download destination referenced by its own download/integrity guidance. Recheck periodically because project download routing can change."
+    "notes": "Corrected to the official ArcoLinux Downloads page. The previous /download/ path returned HTTP 404; the official page is indexed as /downloads/ and provides current ISO options."
   },
   {
     "id": "endeavouros",
